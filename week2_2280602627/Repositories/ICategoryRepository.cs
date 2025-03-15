@@ -3,4 +3,5 @@
 public interface ICategoryRepository
 {
     IEnumerable<Category> GetAllCategories();
+    Category GetById(int id);
 }

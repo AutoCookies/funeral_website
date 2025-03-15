@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using week2_2280602627.Models;
-using week2_2280602627.Repositories; // Đảm bảo thêm namespace chứa IProductRepository
+using week2_2280602627.Repositories;
 
 namespace week2_2280602627.Controllers
 {

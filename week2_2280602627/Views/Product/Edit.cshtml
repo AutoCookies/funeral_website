@@ -5,7 +5,7 @@
 }
 
 <div class="container mt-4">
-    <div class="card shadow-sm border-dark">
+    <div class="card shadow-lg border-dark">
         <div class="card-header bg-dark text-white text-center">
             <h3 class="fw-bold">Chỉnh sửa sản phẩm</h3>
         </div>
@@ -14,8 +14,8 @@
                 <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
 
                 <!-- Ảnh sản phẩm -->
-                <div class="text-center mb-3">
-                    <img id="productPreview" src="@Model.ImageUrl" class="img-thumbnail border border-secondary" style="max-height: 250px;" />
+                <div class="text-center mb-4">
+                    <img id="productPreview" src="@Model.ImageUrl" class="img-thumbnail border-dark" style="max-height: 250px; border-radius: 8px;" />
                 </div>
 
                 <input type="hidden" asp-for="Id" />
@@ -24,39 +24,43 @@
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label asp-for="Name" class="form-label fw-bold text-dark"></label>
-                            <input asp-for="Name" class="form-control border-dark bg-white text-dark" />
+                            <input asp-for="Name" class="form-control border-dark bg-light text-dark" placeholder="Nhập tên sản phẩm" />
                             <span asp-validation-for="Name" class="text-danger"></span>
                         </div>
 
                         <div class="mb-3">
                             <label asp-for="Price" class="form-label fw-bold text-dark"></label>
-                            <input asp-for="Price" class="form-control border-dark bg-white text-dark" type="number" step="0.01" />
+                            <input asp-for="Price" class="form-control border-dark bg-light text-dark" type="number" step="0.01" placeholder="Nhập giá sản phẩm" />
                             <span asp-validation-for="Price" class="text-danger"></span>
                         </div>
 
                         <div class="mb-3">
                             <label asp-for="Description" class="form-label fw-bold text-dark"></label>
-                            <textarea asp-for="Description" class="form-control border-dark bg-white text-dark" rows="3"></textarea>
+                            <textarea asp-for="Description" class="form-control border-dark bg-light text-dark" rows="3" placeholder="Mô tả sản phẩm"></textarea>
                             <span asp-validation-for="Description" class="text-danger"></span>
                         </div>
                     </div>
 
                     <div class="col-md-6">
-                        <div class="mb-3">
-                            <label asp-for="CategoryId" class="form-label fw-bold text-dark"></label>
-                            <input asp-for="CategoryId" class="form-control border-dark bg-white text-dark" />
-                            <span asp-validation-for="CategoryId" class="text-danger"></span>
-                        </div>
+                        @if (ViewBag.Categories != null)
+                        {
+                            <div class="form-group mb-3">
+                                <label asp-for="CategoryId" class="fw-bold text-dark">Danh mục</label>
+                                <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="form-control border-dark bg-light text-dark">
+                                    <option value="">-- Chọn danh mục --</option>
+                                </select>
+                            </div>
+                        }
 
                         <div class="mb-3">
                             <label class="form-label fw-bold text-dark">Đường dẫn ảnh hiện tại</label>
-                            <input asp-for="ImageUrl" class="form-control border-dark bg-white text-dark" readonly />
+                            <input asp-for="ImageUrl" class="form-control border-dark bg-light text-dark" />
                         </div>
 
                         <!-- Upload ảnh mới -->
                         <div class="mb-3">
                             <label class="form-label fw-bold text-dark">Tải ảnh mới</label>
-                            <input type="file" class="form-control border-dark bg-white text-dark" id="imageUpload" name="imageFile" accept="image/*" />
+                            <input type="file" class="form-control border-dark bg-light text-dark" id="imageUpload" name="imageFile" accept="image/*" />
                         </div>
                     </div>
                 </div>
