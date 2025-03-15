@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tưởng Niệm - Diệt Độ Hồng Trần</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/style.css">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+            font-family: "Times New Roman", serif;
+        }
+
+        header, footer {
+            background-color: #000;
+            padding: 15px 0;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #f5f5f5;
+            font-size: 1.1rem;
+        }
+
+        .navbar-brand img {
+            max-height: 50px;
+        }
+
+        .hero-section {
+            background: url('~/images/memorial-bg.jpg') center/cover no-repeat;
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+            .hero-section h1 {
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+
+        .card {
+            background: #333;
+            border: none;
+            color: white;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        }
+
+        footer h3, footer p {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="~/images/solemn-logo.png" alt="Logo" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="/">Trang Chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Thông Tin Tang Lễ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Liên Hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <h1>Kính Nhớ Người Đã Khuất</h1>
+        <p>Tưởng niệm và giữ gìn những kỷ niệm quý báu.</p>
+    </div>
+
+    <main class="container my-4">
+        @RenderBody()
+    </main>
+
+    <footer class="text-center p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Tưởng Niệm</h3>
+                    <p>Kỷ niệm những giá trị cuộc sống và di sản tinh thần</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Thông Tin</h3>
+                    <p>Hướng dẫn và dịch vụ tang lễ</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Liên Hệ</h3>
+                    <p>Số điện thoại: 0123 456 789</p>
+                    <p>Email: lienhe@tangle.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

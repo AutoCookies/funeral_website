@@ -1,0 +1,70 @@
+﻿@model IEnumerable<week2_2280602627.Models.Product>
+
+@{
+    ViewData["Title"] = "Product List";
+}
+
+<h1 class="text-center text-muted my-4">Danh Sách Sản Phẩm</h1>
+
+<p>
+    <a asp-action="Add" class="btn btn-secondary mb-3">Tạo Mới</a>
+</p>
+
+@if (Model == null || !Model.Any())
+{
+    <div class="alert alert-warning">
+        Hiện tại không có sản phẩm.
+    </div>
+}
+else
+{
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th class="text-light">
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th class="text-light">
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th class="text-light">
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th class="text-light">
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th class="text-light">
+                    @Html.DisplayNameFor(model => model.CategoryId)
+                </th>
+                <th class="text-light">Hành Động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-muted">
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td class="text-dark">
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td class="text-warning">
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td class="text-secondary">
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td class="text-info">
+                        @Html.DisplayFor(modelItem => item.CategoryId)
+                    </td>
+                    <td>
+                        <a class="btn btn-primary btn-sm" asp-action="Update" asp-route-id="@item.Id">Sửa</a>
+                        <a class="btn btn-info btn-sm" asp-action="Display" asp-route-id="@item.Id">Chi Tiết</a>
+                        <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.Id" onclick="return confirm('Bạn chắc chắn muốn xóa sản phẩm này?')">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

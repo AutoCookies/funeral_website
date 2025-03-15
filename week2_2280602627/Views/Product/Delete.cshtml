@@ -1,0 +1,62 @@
+﻿@model week2_2280602627.Models.Product
+
+@{
+    ViewData["Title"] = "Delete Product";
+}
+
+<!-- Thêm kiểu CSS cho nền tối và các thành phần khác -->
+<style>
+    body {
+        background-color: #333333; /* Nền xám đậm */
+        color: #ffffff; /* Màu chữ trắng */
+    }
+
+    .container {
+        background-color: #444444; /* Nền xám sáng cho vùng nội dung */
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    h2 {
+        color: #ffffff; /* Màu chữ cho tiêu đề */
+    }
+
+    h4 {
+        color: #cccccc; /* Màu chữ cho thông tin sản phẩm */
+    }
+
+    .btn-danger {
+        background-color: #c82333; /* Đỏ để xóa */
+        border-color: #bd2130;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d; /* Xám nhạt cho nút hủy */
+        border-color: #6c757d;
+    }
+
+    a {
+        color: #cccccc; /* Liên kết màu xám sáng */
+    }
+</style>
+
+<div class="container">
+    <h2>Are you sure you want to delete this?</h2>
+
+    <div>
+        <h4>Name: @Model.Name</h4>
+        <h4>Price: @Model.Price</h4>
+        <h4>Description: @Model.Description</h4>
+    </div>
+
+    <form asp-action="DeleteConfirmed" method="post">
+        <!-- Ẩn ID của sản phẩm để gửi trong form -->
+        <input type="hidden" asp-for="Id" />
+
+        <!-- Nút xóa -->
+        <input type="submit" value="Delete" class="btn btn-danger" />
+
+        <!-- Nút hủy -->
+        | <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
