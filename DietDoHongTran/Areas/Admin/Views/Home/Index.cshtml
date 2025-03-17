@@ -1,0 +1,40 @@
+﻿@model IEnumerable<DietDoHongTran.Models.Product>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<div class="container mt-5">
+    <h2>Our Products</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-warning">
+            No products available at the moment.
+        </div>
+    }
+
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    @if (!string.IsNullOrEmpty(product.ImageUrl))
+                    {
+                        <img class="card-img-top" src="@product.ImageUrl" alt="@product.Name" style="height: 200px; object-fit: cover;" />
+                    }
+                    else
+                    {
+                        <img class="card-img-top" src="~/images/default-image.jpg" alt="No image available" style="height: 200px; object-fit: cover;" />
+                    }
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Name</h5>
+                        <p class="card-text">@product.Description</p>
+                        <p class="card-text"><strong>@string.Format("{0:0.00}VNĐ", product.Price)</strong></p>
+                        <a href="@Url.Action("Display", "Product", new { id = product.Id })" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

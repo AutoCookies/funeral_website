@@ -1,0 +1,55 @@
+﻿@model DietDoHongTran.Models.Product
+
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">Chi tiết sản phẩm</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <!-- Hình ảnh sản phẩm -->
+                <div class="col-md-4 text-center">
+                    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                    {
+                        <img src="@Model.ImageUrl" alt="@Model.Name" class="img-fluid rounded" style="max-width: 100%;">
+                    }
+                    else
+                    {
+                        <p class="text-muted">Không có ảnh</p>
+                    }
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="col-md-8">
+                    <table class="table table-borderless">
+                        <tr>
+                            <th>Tên sản phẩm:</th>
+                            <td>@Html.DisplayFor(model => model.Name)</td>
+                        </tr>
+                        <tr>
+                            <th>Giá:</th>
+                            <td><strong class="text-danger">@string.Format("{0:N0}", Model.Price) VND</strong></td>
+                        </tr>
+                        <tr>
+                            <th>Mô tả:</th>
+                            <td>@Html.DisplayFor(model => model.Description)</td>
+                        </tr>
+                        <tr>
+                            <th>Loại sản phẩm:</th>
+                            <td>@Html.DisplayFor(model => model.Category.Name)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer text-end">
+            <a asp-action="Index" asp-controller="Home" class="btn btn-outline-secondary">← Quay lại danh sách</a>
+        </div>
+    </div>
+</div>

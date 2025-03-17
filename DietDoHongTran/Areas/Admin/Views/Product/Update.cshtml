@@ -1,0 +1,81 @@
+﻿@model DietDoHongTran.Models.Product
+
+@{
+    ViewData["Title"] = "Cập nhật sản phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-lg border-0" style="background-color: #f8f9fa; border-radius: 10px;">
+        <div class="card-header text-center bg-dark text-white">
+            <h2 class="m-0">Cập nhật sản phẩm</h2>
+        </div>
+
+        <div class="card-body">
+            <form asp-area="Admin" asp-controller="Product" asp-action="Update" method="post">
+                <input type="hidden" asp-for="Id" />
+
+                <div class="row">
+                    <!-- Hình ảnh sản phẩm -->
+                    <div class="col-md-4 text-center">
+                        <img id="previewImage" src="@Model.ImageUrl" alt="@Model.Name"
+                             class="img-fluid rounded" style="max-height: 250px; border: 1px solid #ddd;">
+
+                        <div class="form-group mt-2">
+                            <label asp-for="ImageUrl" class="form-label">URL Hình ảnh</label>
+                            <input asp-for="ImageUrl" class="form-control" oninput="updatePreviewImage()" />
+                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <!-- Thông tin sản phẩm -->
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label asp-for="Name" class="form-label">Tên sản phẩm</label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-2">
+                            <label asp-for="Price" class="form-label">Giá</label>
+                            <input asp-for="Price" class="form-control" type="number" />
+                            <span asp-validation-for="Price" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-2">
+                            <label asp-for="Description" class="form-label">Mô tả</label>
+                            <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-2">
+                            <label asp-for="CategoryId" class="form-label">Danh mục</label>
+                            <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="form-control">
+                                <option value="">-- Chọn danh mục --</option>
+                            </select>
+                            <span asp-validation-for="CategoryId" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-success">
+                        <i class="fas fa-save"></i> Lưu cập nhật
+                    </button>
+                    <a asp-area="Admin" asp-controller="Product" asp-action="Index" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Quay lại danh sách
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function updatePreviewImage() {
+            let imageUrl = document.querySelector("[name='ImageUrl']").value;
+            document.getElementById("previewImage").src = imageUrl || "/images/no-image.jpg";
+        }
+    </script>
+}

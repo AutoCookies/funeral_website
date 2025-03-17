@@ -1,0 +1,53 @@
+﻿    @model DietDoHongTran.Models.Product
+    @using Microsoft.AspNetCore.Mvc.Rendering
+    @{
+        ViewData["Title"] = "Add Product";
+    }
+
+    <h2 class="text-center mb-4">Add Product</h2>
+
+    <form asp-action="Add" method="post" enctype="multipart/form-data" class="form-container">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    <label asp-for="Name" class="form-label">Product Name</label>
+                    <input asp-for="Name" class="form-control form-control-lg" placeholder="Enter product name" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    <label asp-for="Price" class="form-label">Price</label>
+                    <input asp-for="Price" class="form-control form-control-lg" placeholder="Enter product price" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Description" class="form-label">Description</label>
+            <textarea asp-for="Description" class="form-control form-control-lg" rows="4" placeholder="Enter product description"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Chọn danh mục</label>
+            <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="form-control">
+                <option value="">-- Chọn danh mục --</option>
+            </select>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="ImageUrl" class="form-label">Product Image</label>
+            <input type="file" asp-for="ImageUrl" class="form-control form-control-lg" />
+            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+        </div>
+
+        <div class="d-flex justify-content-end">
+            <button asp-area="Admin" asp-controller="Product" asp-action="Index" >Trở lại</button>
+        </div>
+
+        <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary btn-lg">Add Product</button>
+        </div>
+    </form>
