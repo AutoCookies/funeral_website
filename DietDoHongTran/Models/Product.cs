@@ -15,5 +15,7 @@ namespace DietDoHongTran.Models
         public List<ProductImage>? Images { get; set; }
         public int? CategoryId { get; set; }
         public Category? Category { get; set; }
+        public long instock {  get; set; }
+        public long sold {  get; set; }
     }
 }

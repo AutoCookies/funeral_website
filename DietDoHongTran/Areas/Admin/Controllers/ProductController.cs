@@ -58,7 +58,7 @@ namespace DietDoHongTran.Areas.Admin.Controllers
                 }
 
                 await _productRepository.AddAsync(product);
-                return RedirectToAction("Add", "Product", new { area = "Admin" });
+                return RedirectToAction("Index", "Product", new { area = "Admin" });
             }
 
             var categories = await _categoryRepository.GetAllAsync();
@@ -170,12 +170,26 @@ namespace DietDoHongTran.Areas.Admin.Controllers
             }
             return View(product);
         }
-        // Xử lý xóa sản phẩm
-        [HttpPost, ActionName("DeleteConfirmed")]
+        [HttpPost]
+        [ValidateAntiForgeryToken]  // Đảm bảo token hợp lệ
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            await _productRepository.DeleteAsync(id);
-            return RedirectToAction(nameof(Index));
+            var product = await _productRepository.GetByIdAsync(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            try
+            {
+                await _productRepository.DeleteAsync(id);
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "Không thể xóa sản phẩm, có thể sản phẩm đang được sử dụng.");
+                return View("Delete", product);
+            }
         }
     }
 }

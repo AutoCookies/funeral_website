@@ -1,0 +1,30 @@
+﻿@model DietDoHongTran.Models.Category
+
+@{
+    ViewData["Title"] = "Chi tiết danh mục";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-lg border-0" style="border-radius: 10px;">
+        <div class="card-header bg-primary text-white text-center">
+            <h2 class="m-0">Chi tiết danh mục</h2>
+        </div>
+
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-4 text-muted">Tên danh mục</dt>
+                <dd class="col-sm-8 font-weight-bold">@Model.Name</dd>
+            </dl>
+        </div>
+
+        <div class="card-footer text-center">
+            <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning btn-lg">
+                <i class="fas fa-edit"></i> Chỉnh sửa
+            </a>
+            <a asp-area="Admin" asp-action="Index" aspcontroller="Categories" rclass="btn btn-secondary btn-lg">
+                <i class="fas fa-list"></i> Quay lại danh sách
+            </a>
+        </div>
+    </div>
+</div>
