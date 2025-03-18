@@ -10,34 +10,45 @@ namespace DietDoHongTran.Models
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<ProductImage> ProductImages { get; set; }
+        public DbSet<Service> Services { get; set; }
+        public DbSet<ServiceProduct> ServiceProducts { get; set; } // Thêm DbSet bảng trung gian
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            // Tắt Cascade Delete giữa Category và Product (set CategoryId to null for products when deleting Category)
+            // Định nghĩa quan hệ nhiều-nhiều thông qua bảng trung gian ServiceProduct
+            modelBuilder.Entity<ServiceProduct>()
+                .HasKey(sp => new { sp.ServiceId, sp.ProductId }); // Định nghĩa khóa chính
+
+            modelBuilder.Entity<ServiceProduct>()
+                .HasOne(sp => sp.Service)
+                .WithMany(s => s.ServiceProducts)
+                .HasForeignKey(sp => sp.ServiceId)
+                .OnDelete(DeleteBehavior.Cascade); // Xóa Service thì ServiceProduct cũng bị xóa
+
+            modelBuilder.Entity<ServiceProduct>()
+                .HasOne(sp => sp.Product)
+                .WithMany(p => p.ServiceProducts)
+                .HasForeignKey(sp => sp.ProductId)
+                .OnDelete(DeleteBehavior.Cascade); // Xóa Product thì ServiceProduct cũng bị xóa
+
+            // Tắt Cascade Delete giữa Category và Product
             modelBuilder.Entity<Product>()
                 .HasOne(p => p.Category)
                 .WithMany(c => c.Products)
-                .OnDelete(DeleteBehavior.SetNull); // Ensures products don't get deleted but CategoryId is set to null
+                .HasForeignKey(p => p.CategoryId)
+                .OnDelete(DeleteBehavior.SetNull);
 
-            // Explicitly setting the primary key for Category (EF Core does this by default)
-            modelBuilder.Entity<Category>()
-                .HasKey(c => c.Id);
+            // Định nghĩa khóa chính và auto-increment cho các bảng
+            modelBuilder.Entity<Category>().HasKey(c => c.Id);
+            modelBuilder.Entity<Category>().Property(c => c.Id).ValueGeneratedOnAdd();
 
-            // Ensuring CategoryId is auto-generated (auto-increment)
-            modelBuilder.Entity<Category>()
-                .Property(c => c.Id)
-                .ValueGeneratedOnAdd();
+            modelBuilder.Entity<Product>().HasKey(p => p.Id);
+            modelBuilder.Entity<Product>().Property(p => p.Id).ValueGeneratedOnAdd();
 
-            // Explicitly setting the primary key for Product (EF Core does this by default)
-            modelBuilder.Entity<Product>()
-                .HasKey(p => p.Id);
-
-            // Ensuring ProductId is auto-generated (auto-increment)
-            modelBuilder.Entity<Product>()
-                .Property(p => p.Id)
-                .ValueGeneratedOnAdd();
+            modelBuilder.Entity<Service>().HasKey(s => s.Id);
+            modelBuilder.Entity<Service>().Property(s => s.Id).ValueGeneratedOnAdd();
         }
     }
 }

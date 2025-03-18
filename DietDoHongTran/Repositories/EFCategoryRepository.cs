@@ -15,15 +15,7 @@ namespace DietDoHongTran.Repositories
 
         public async Task<IEnumerable<Category>> GetAllAsync()
         {
-            var categories = await _context.Categories.ToListAsync();
-
-            Console.WriteLine($"Fetched {categories.Count()} categories.");
-            foreach (var category in categories)
-            {
-                Console.WriteLine($"Category: {category.Id} - {category.Name}");
-            }
-
-            return categories;
+            return await _context.Categories.ToListAsync();
         }
 
         public async Task<Category> GetByIdAsync(int id)
@@ -48,6 +40,16 @@ namespace DietDoHongTran.Repositories
             var category = await _context.Categories.FindAsync(id);
             _context.Categories.Remove(category);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<List<Product>> GetProductsByIdsAsync(List<int> productIds)
+        {
+            if (productIds == null || !productIds.Any())
+                return new List<Product>();
+
+            return await _context.Products
+                .Where(p => productIds.Contains((int)p.Id))
+                .ToListAsync();
         }
     }
 }

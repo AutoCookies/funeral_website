@@ -2,39 +2,69 @@
 
 @{
     ViewData["Title"] = "Products";
+    var top3BestSelling = Model.OrderByDescending(p => p.Sold).Take(3);
 }
 
 <div class="container mt-5">
-    <h2>Our Products</h2>
+    <h2 class="text-center text-danger fw-bold mb-4">🔥 Best Selling Products</h2>
 
-    @if (!Model.Any())
+    @if (!top3BestSelling.Any())
     {
-        <div class="alert alert-warning">
-            No products available at the moment.
+        <div class="alert alert-warning text-center">
+            No best-selling products available at the moment.
         </div>
     }
 
     <div class="row">
-        @foreach (var product in Model)
+        @foreach (var product in top3BestSelling)
         {
             <div class="col-md-4">
-                <div class="card mb-4">
-                    @if (!string.IsNullOrEmpty(product.ImageUrl))
-                    {
-                        <img class="card-img-top" src="@product.ImageUrl" alt="@product.Name" style="height: 200px; object-fit: cover;" />
-                    }
-                    else
-                    {
-                        <img class="card-img-top" src="~/images/default-image.jpg" alt="No image available" style="height: 200px; object-fit: cover;" />
-                    }
+                <div class="card mb-4 shadow-lg border-0 product-card">
+                    <div class="position-relative">
+                        @if (!string.IsNullOrEmpty(product.ImageUrl))
+                        {
+                            <img class="card-img-top product-image" src="@product.ImageUrl" alt="@product.Name" />
+                        }
+                        else
+                        {
+                            <img class="card-img-top product-image" src="~/images/default-image.jpg" alt="No image available" />
+                        }
+                        <span class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-1">Best Seller</span>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">@product.Name</h5>
+                        <h5 class="card-title text-primary">@product.Name</h5>
                         <p class="card-text">@product.Description</p>
-                        <p class="card-text"><strong>@string.Format("{0:0.00}VNĐ", product.Price)</strong></p>
-                        <a href="@Url.Action("Display", "Product", new { id = product.Id })" class="btn btn-primary">View Details</a>
+                        <p class="card-text">
+                            <strong>Price:</strong> <span class="text-success">@string.Format("{0:0.00} VNĐ", product.Price)</span>
+                        </p>
+                        <p class="card-text"><strong>In Stock:</strong> @product.Instock</p>
+                        <p class="card-text text-danger fw-bold"><strong>🔥 Sold:</strong> @product.Sold</p>
+
+                        <a href="@Url.Action("Display", "Product", new { id = product.Id })" class="btn btn-primary w-100">
+                            <i class="fas fa-eye"></i> View Details
+                        </a>
                     </div>
                 </div>
             </div>
         }
     </div>
 </div>
+
+<style>
+    .product-card {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        border-radius: 10px;
+    }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+    .product-image {
+        height: 250px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+</style>

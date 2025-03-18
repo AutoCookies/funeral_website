@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "E:\\Github Projects\\DietDoHongTran\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\dietdohongtran\\dietdohongtran\\areas\\admin\\views\\categories\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\areas\\admin\\views\\categories\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\dietdohongtran\\dietdohongtran\\areas\\admin\\views\\service\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\areas\\admin\\views\\service\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\dietdohongtran\\dietdohongtran\\areas\\admin\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\areas\\admin\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\dietdohongtran\\dietdohongtran\\areas\\admin\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\areas\\admin\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\dietdohongtran\\dietdohongtran\\areas\\admin\\views\\service\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\areas\\admin\\views\\service\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +22,45 @@
       "DocumentGroups": [
         {
           "DockedHeight": 10,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Areas\\Admin\\Views\\Product\\Add.cshtml",
-              "RelativeDocumentMoniker": "DietDoHongTran\\Areas\\Admin\\Views\\Product\\Add.cshtml",
-              "ToolTip": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Areas\\Admin\\Views\\Product\\Add.cshtml",
-              "RelativeToolTip": "DietDoHongTran\\Areas\\Admin\\Views\\Product\\Add.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAADgAAAA2AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Areas\\Admin\\Views\\Service\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Areas\\Admin\\Views\\Service\\Delete.cshtml",
+              "ToolTip": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Areas\\Admin\\Views\\Service\\Delete.cshtml",
+              "RelativeToolTip": "DietDoHongTran\\Areas\\Admin\\Views\\Service\\Delete.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwBwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T10:00:16.42Z",
+              "WhenOpened": "2025-03-18T06:38:12.133Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Display.cshtml",
-              "DocumentMoniker": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Areas\\Admin\\Views\\Categories\\Display.cshtml",
-              "RelativeDocumentMoniker": "DietDoHongTran\\Areas\\Admin\\Views\\Categories\\Display.cshtml",
-              "ToolTip": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Areas\\Admin\\Views\\Categories\\Display.cshtml",
-              "RelativeToolTip": "DietDoHongTran\\Areas\\Admin\\Views\\Categories\\Display.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABMAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Areas\\Admin\\Views\\Service\\Update.cshtml",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Areas\\Admin\\Views\\Service\\Update.cshtml",
+              "ToolTip": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Areas\\Admin\\Views\\Service\\Update.cshtml",
+              "RelativeToolTip": "DietDoHongTran\\Areas\\Admin\\Views\\Service\\Update.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-17T09:57:33.948Z",
+              "WhenOpened": "2025-03-18T06:35:42.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceController.cs",
+              "DocumentMoniker": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Areas\\Admin\\Controllers\\ServiceController.cs",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Areas\\Admin\\Controllers\\ServiceController.cs",
+              "ToolTip": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Areas\\Admin\\Controllers\\ServiceController.cs",
+              "RelativeToolTip": "DietDoHongTran\\Areas\\Admin\\Controllers\\ServiceController.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAmwGoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T06:34:31.874Z",
               "EditorCaption": ""
             }
           ]

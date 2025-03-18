@@ -1,67 +1,75 @@
 ﻿@model DietDoHongTran.Models.Product
-@using Microsoft.AspNetCore.Mvc.Rendering
 
 @{
-    ViewData["Title"] = "Thêm Sản Phẩm";
+    ViewData["Title"] = "Add Product";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container mt-4">
-    <div class="card shadow-lg border-0" style="border-radius: 10px;">
-        <div class="card-header bg-primary text-white text-center">
-            <h2 class="m-0">Thêm Sản Phẩm</h2>
-        </div>
+<h1 class="text-primary">➕ Add Product</h1>
+<hr />
 
-        <div class="card-body">
-            <form asp-action="Add" method="post" enctype="multipart/form-data">
-                <div class="row">
-                    <!-- Tên sản phẩm -->
-                    <div class="col-md-6 mb-3">
-                        <label asp-for="Name" class="form-label font-weight-bold">Tên sản phẩm</label>
-                        <input asp-for="Name" class="form-control form-control-lg" placeholder="Nhập tên sản phẩm" />
-                        <span asp-validation-for="Name" class="text-danger"></span>
-                    </div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card shadow-lg p-4">
+            <form asp-action="Add" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
 
-                    <!-- Giá sản phẩm -->
-                    <div class="col-md-6 mb-3">
-                        <label asp-for="Price" class="form-label font-weight-bold">Giá</label>
-                        <input asp-for="Price" class="form-control form-control-lg" placeholder="Nhập giá sản phẩm" />
-                        <span asp-validation-for="Price" class="text-danger"></span>
-                    </div>
+                <!-- Product Name -->
+                <div class="form-group mb-3">
+                    <label asp-for="Name" class="form-label fw-bold">📌 Product Name</label>
+                    <input asp-for="Name" class="form-control" placeholder="Enter product name..." />
+                    <span asp-validation-for="Name" class="text-danger"></span>
                 </div>
 
-                <!-- Mô tả sản phẩm -->
+                <!-- Price -->
                 <div class="form-group mb-3">
-                    <label asp-for="Description" class="form-label font-weight-bold">Mô tả</label>
-                    <textarea asp-for="Description" class="form-control form-control-lg" rows="4" placeholder="Nhập mô tả sản phẩm"></textarea>
+                    <label asp-for="Price" class="form-label fw-bold">💲 Price</label>
+                    <input asp-for="Price" class="form-control" type="number" placeholder="Enter price..." />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+
+                <!-- Description -->
+                <div class="form-group mb-3">
+                    <label asp-for="Description" class="form-label fw-bold">📝 Description</label>
+                    <textarea asp-for="Description" class="form-control" rows="3" placeholder="Enter product description..."></textarea>
                     <span asp-validation-for="Description" class="text-danger"></span>
                 </div>
 
-                <!-- Chọn danh mục -->
+                <!-- Image Upload -->
                 <div class="form-group mb-3">
-                    <label asp-for="CategoryId" class="form-label font-weight-bold">Danh mục</label>
-                    <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="form-control form-control-lg">
-                        <option value="">-- Chọn danh mục --</option>
-                    </select>
-                    <span asp-validation-for="CategoryId" class="text-danger"></span>
-                </div>
-
-                <!-- Hình ảnh sản phẩm -->
-                <div class="form-group mb-3">
-                    <label asp-for="ImageUrl" class="form-label font-weight-bold">Ảnh sản phẩm</label>
-                    <input type="file" asp-for="ImageUrl" class="form-control form-control-lg" />
+                    <label asp-for="ImageUrl" class="form-label fw-bold">🖼️ Upload Image</label>
+                    <input type="file" name="imageFile" class="form-control" accept="image/*" />
                     <span asp-validation-for="ImageUrl" class="text-danger"></span>
                 </div>
 
-                <!-- Nút thao tác -->
-                <div class="d-flex justify-content-between">
-                    <a asp-area="Admin" asp-controller="Product" asp-action="Index" class="btn btn-secondary btn-lg">
-                        <i class="fas fa-arrow-left"></i> Trở lại
-                    </a>
-                    <button type="submit" class="btn btn-success btn-lg">
-                        <i class="fas fa-check"></i> Thêm sản phẩm
-                    </button>
+                <!-- Category -->
+                <div class="form-group mb-3">
+                    <label asp-for="CategoryId" class="form-label fw-bold">📂 Category</label>
+                    <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.Categories">
+                        <option selected>-- Select a category --</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <!-- In Stock -->
+                    <div class="col-md-6 form-group mb-3">
+                        <label asp-for="Instock" class="form-label fw-bold">📦 In Stock</label>
+                        <input asp-for="Instock" class="form-control" type="number" placeholder="Enter stock quantity..." />
+                        <span asp-validation-for="Instock" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-4">
+                    <a asp-action="Index" class="btn btn-secondary">🔙 Back to List</a>
+                    <button type="submit" class="btn btn-primary">✅ Create Product</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DietDoHongTran.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250316155956_ExtendIdentityUser")]
-    partial class ExtendIdentityUser
+    [Migration("20250318051903_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -136,13 +136,19 @@ namespace DietDoHongTran.Migrations
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Instock")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<float>("Price")
-                        .HasColumnType("real");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("Sold")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -171,6 +177,46 @@ namespace DietDoHongTran.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("ProductImages");
+                });
+
+            modelBuilder.Entity("DietDoHongTran.Models.Service", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal?>("BasePrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Services");
+                });
+
+            modelBuilder.Entity("DietDoHongTran.Models.ServiceProduct", b =>
+                {
+                    b.Property<int>("ServiceId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ServiceId", "ProductId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ServiceProducts");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -327,6 +373,25 @@ namespace DietDoHongTran.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("DietDoHongTran.Models.ServiceProduct", b =>
+                {
+                    b.HasOne("DietDoHongTran.Models.Product", "Product")
+                        .WithMany("ServiceProducts")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DietDoHongTran.Models.Service", "Service")
+                        .WithMany("ServiceProducts")
+                        .HasForeignKey("ServiceId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("Service");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -386,6 +451,13 @@ namespace DietDoHongTran.Migrations
             modelBuilder.Entity("DietDoHongTran.Models.Product", b =>
                 {
                     b.Navigation("Images");
+
+                    b.Navigation("ServiceProducts");
+                });
+
+            modelBuilder.Entity("DietDoHongTran.Models.Service", b =>
+                {
+                    b.Navigation("ServiceProducts");
                 });
 #pragma warning restore 612, 618
         }

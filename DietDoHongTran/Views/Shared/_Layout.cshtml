@@ -7,70 +7,41 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="~/css/style.css">
-    <style>
-        /* Đảm bảo body luôn có chiều cao tối thiểu 100vh */
-        body {
-            background-color: #f4f4f4; /* Nền sáng hơn */
-            color: #333333; /* Màu chữ tối dễ đọc */
-            font-family: "Times New Roman", serif;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Chiều cao tối thiểu 100% màn hình */
-        }
-
-        header, footer {
-            background-color: #2c3e50; /* Màu xanh đậm cho header và footer */
-            padding: 20px 0;
-        }
-
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        footer {
-            background-color: #34495e;
-            padding: 20px;
-            margin-top: auto; /* Đảm bảo footer luôn ở cuối */
-        }
-
-        .navbar-dark .navbar-nav .nav-link {
-            color: #ecf0f1; /* Màu sáng cho các link trong navbar */
-            font-size: 1.1rem;
-        }
-
-        .navbar-brand img {
-            max-height: 50px;
-        }
-
-        /* Nội dung chính */
-        .main-content {
-            flex-grow: 1; /* Chiếm không gian còn lại */
-            padding-bottom: 60px; /* Để tránh che khuất bởi footer */
-        }
-
-        footer h3, footer p {
-            color: #bdc3c7; /* Màu sáng cho văn bản trong footer */
-        }
-
-    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="~/images/solemn-logo.png" alt="Logo" class="img-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="/">
+                    <img src="~/images/logo.svg" alt="Logo" class="logo">
                 </a>
+
+                <!-- Toggle button -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- Navbar -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="/">Trang Chủ</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Thông Tin Tang Lễ</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Liên Hệ</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link cart-icon" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 47.998 40.34">
+                                    <g fill="#ecf0f1">
+                                        <path d="M47.273 0h-6.544a.728.728 0 0 0-.712.58L38.63 7.219H.727a.727.727 0 0 0-.7.912l4.6 17.5c.006.021.019.037.026.059a.792.792 0 0 0 .042.094.747.747 0 0 0 .092.135.831.831 0 0 0 .065.068.626.626 0 0 0 .167.107.285.285 0 0 0 .045.029l13.106 5.145-5.754 2.184a4.382 4.382 0 1 0 .535 1.353l7.234-2.746 6.866 2.7A4.684 4.684 0 1 0 27.6 33.4l-5.39-2.113 13.613-5.164c.013-.006.021-.016.033-.021a.712.712 0 0 0 .188-.119.625.625 0 0 0 .063-.072.654.654 0 0 0 .095-.135.58.58 0 0 0 .04-.1.73.73 0 0 0 .033-.084l5.042-24.137h5.953a.728.728 0 0 0 0-1.455z" />
+                                        <circle cx="8.443" cy="35.734" r=".728" />
+                                        <circle cx="31.548" cy="35.734" r=".728" />
+                                    </g>
+                                </svg>
+                                <!-- CHỗ này sẽ dánh cho đơn hàng nên từ từ-->
+                                <span class="cart-badge" id="cartCount">0</span>
+                            </a>
+                        </li>
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
@@ -82,28 +53,18 @@
         @RenderBody()
     </main>
 
-    <footer class="text-center p-4">
+    <footer class="text-center">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Tưởng Niệm</h3>
-                    <p>Kỷ niệm những giá trị cuộc sống và di sản tinh thần</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Thông Tin</h3>
-                    <p>Hướng dẫn và dịch vụ tang lễ</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Liên Hệ</h3>
-                    <p>Số điện thoại: 0123 456 789</p>
-                    <p>Email: lienhe@tangle.com</p>
-                </div>
-            </div>
+            <p>&copy; 2025 Tưởng Niệm. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script>
+        let cartCount = 3;
+        document.getElementById("cartCount").innerText = cartCount;
+    </script>
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>

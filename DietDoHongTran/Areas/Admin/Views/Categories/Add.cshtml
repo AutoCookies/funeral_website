@@ -1,0 +1,44 @@
+﻿@model DietDoHongTran.Models.Category
+
+@{
+    ViewData["Title"] = "Thêm danh mục";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3 class="m-0">Thêm danh mục mới</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Add">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger d-none"></div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Name" class="form-label fw-bold">Tên danh mục</label>
+                            <input asp-for="Name" class="form-control form-control-lg" placeholder="Nhập tên danh mục" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Index" class="btn btn-secondary btn-lg">
+                                <i class="fas fa-arrow-left"></i> Trở lại
+                            </a>
+                            <button type="submit" class="btn btn-success btn-lg">
+                                <i class="fas fa-check"></i> Thêm danh mục
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

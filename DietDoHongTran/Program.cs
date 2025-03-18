@@ -25,6 +25,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IProductRepository, EFProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
+builder.Services.AddScoped<IServiceRepository, EFServiceRepository>();
 
 var app = builder.Build();
 

@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "E:\\Github Projects\\DietDoHongTran\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\dietdohongtran\\dietdohongtran\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\dietdohongtran\\dietdohongtran\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\dietdohongtran\\dietdohongtran\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\dietdohongtran\\dietdohongtran\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Models\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "DietDoHongTran\\Models\\ApplicationDbContext.cs",
-              "ToolTip": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Models\\ApplicationDbContext.cs",
-              "RelativeToolTip": "DietDoHongTran\\Models\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T01:06:01.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Category.cs",
-              "DocumentMoniker": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "DietDoHongTran\\Models\\Category.cs",
-              "ToolTip": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Models\\Category.cs",
-              "RelativeToolTip": "DietDoHongTran\\Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T01:02:31.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Product.cs",
-              "DocumentMoniker": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "DietDoHongTran\\Models\\Product.cs",
-              "ToolTip": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Models\\Product.cs",
-              "RelativeToolTip": "DietDoHongTran\\Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T00:58:54.614Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Areas\\Admin\\Views\\Home\\Index.cshtml*",
+              "RelativeToolTip": "DietDoHongTran\\Areas\\Admin\\Views\\Home\\Index.cshtml*",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T06:39:44.349Z",
               "EditorCaption": ""
             }
           ]

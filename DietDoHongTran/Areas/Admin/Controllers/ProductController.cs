@@ -7,18 +7,19 @@ using DietDoHongTran.Repositories;
 
 namespace DietDoHongTran.Areas.Admin.Controllers
 {
-
     [Area("Admin")]
     [Authorize(Roles = SD.Role_Admin)]
     public class ProductController : Controller
     {
         private readonly IProductRepository _productRepository;
         private readonly ICategoryRepository _categoryRepository;
+        private readonly IServiceRepository _serviceRepository;
 
-        public ProductController(IProductRepository productRepository, ICategoryRepository categoryRepository)
+        public ProductController(IProductRepository productRepository, ICategoryRepository categoryRepository, IServiceRepository serviceRepository)
         {
             _productRepository = productRepository;
             _categoryRepository = categoryRepository;
+            _serviceRepository = serviceRepository;
         }
 
         public async Task<IActionResult> Index()
@@ -27,14 +28,13 @@ namespace DietDoHongTran.Areas.Admin.Controllers
             return View(products);
         }
 
-
         public async Task<IActionResult> Add()
         {
             var categories = await _categoryRepository.GetAllAsync();
 
             if (!categories.Any())
             {
-                Console.WriteLine("No categories found in Admin Area!");
+                Console.WriteLine("No categories found!");
             }
 
             ViewBag.Categories = new SelectList(categories, "Id", "Name");
@@ -42,32 +42,36 @@ namespace DietDoHongTran.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add(Product product, IFormFile? imageUrl)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Add(Product product, IFormFile? imageFile)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                if (imageUrl != null)
-                {
-                    var imagePath = await SaveImage(imageUrl);
-                    if (imagePath == null)
-                    {
-                        ModelState.AddModelError("ImageUrl", "Error saving image. Please try again.");
-                        return View(product);
-                    }
-                    product.ImageUrl = imagePath;
-                }
-
-                await _productRepository.AddAsync(product);
-                return RedirectToAction("Index", "Product", new { area = "Admin" });
+                ViewBag.Categories = new SelectList(await _categoryRepository.GetAllAsync(), "Id", "Name");
+                return View(product);
             }
 
-            var categories = await _categoryRepository.GetAllAsync();
-            ViewBag.Categories = new SelectList(categories, "Id", "Name");
-            return View(product);
+            // Lưu hình ảnh nếu người dùng chọn ảnh mới
+            if (imageFile != null)
+            {
+                var imagePath = await SaveImage(imageFile);
+                if (imagePath == null)
+                {
+                    ModelState.AddModelError("ImageUrl", "Lỗi khi tải lên ảnh.");
+                    ViewBag.Categories = new SelectList(await _categoryRepository.GetAllAsync(), "Id", "Name");
+                    return View(product);
+                }
+                product.ImageUrl = imagePath;
+            }
+
+            await _productRepository.AddAsync(product);
+            return RedirectToAction(nameof(Index));
         }
 
-        private async Task<string?> SaveImage(IFormFile image)
+        private async Task<string?> SaveImage(IFormFile? image)
         {
+            if (image == null) return null;
+
             try
             {
                 var uploadFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
@@ -75,21 +79,25 @@ namespace DietDoHongTran.Areas.Admin.Controllers
                 if (!Directory.Exists(uploadFolder))
                 {
                     Directory.CreateDirectory(uploadFolder);
+                    Console.WriteLine("Created directory: " + uploadFolder);
                 }
 
                 var uniqueFileName = $"{Guid.NewGuid()}_{image.FileName}";
                 var savePath = Path.Combine(uploadFolder, uniqueFileName);
+
+                Console.WriteLine("Saving image to: " + savePath);
 
                 using (var fileStream = new FileStream(savePath, FileMode.Create))
                 {
                     await image.CopyToAsync(fileStream);
                 }
 
+                Console.WriteLine("Image saved successfully!");
+
                 return "/images/" + uniqueFileName;
             }
             catch (Exception ex)
             {
-                // Ghi log lỗi nếu cần
                 Console.WriteLine($"Error saving image: {ex.Message}");
                 return null;
             }
@@ -112,14 +120,14 @@ namespace DietDoHongTran.Areas.Admin.Controllers
             {
                 return NotFound();
             }
+
             var categories = await _categoryRepository.GetAllAsync();
-            ViewBag.Categories = new SelectList(categories, "Id", "Name",
-            product.CategoryId);
+            ViewBag.Categories = new SelectList(categories, "Id", "Name", product.CategoryId);
             return View(product);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update(int id, Product product, IFormFile? imageUrl)
+        public async Task<IActionResult> Update(int id, Product product, IFormFile? imageFile)
         {
             if (id != product.Id)
             {
@@ -134,18 +142,17 @@ namespace DietDoHongTran.Areas.Admin.Controllers
 
             if (ModelState.IsValid)
             {
-                if (imageUrl != null)
+                if (imageFile != null)
                 {
-                    var newImagePath = await SaveImage(imageUrl);
+                    var newImagePath = await SaveImage(imageFile);
                     if (newImagePath == null)
                     {
-                        ModelState.AddModelError("ImageUrl", "Error saving image. Please try again.");
+                        ModelState.AddModelError("ImageUrl", "Lỗi khi lưu hình ảnh.");
                         return View(product);
                     }
                     existingProduct.ImageUrl = newImagePath;
                 }
 
-                // Cập nhật thông tin sản phẩm
                 existingProduct.Name = product.Name;
                 existingProduct.Price = product.Price;
                 existingProduct.Description = product.Description;
@@ -160,7 +167,6 @@ namespace DietDoHongTran.Areas.Admin.Controllers
             return View(product);
         }
 
-        // Hiển thị form xác nhận xóa sản phẩm
         public async Task<IActionResult> Delete(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);
@@ -170,8 +176,9 @@ namespace DietDoHongTran.Areas.Admin.Controllers
             }
             return View(product);
         }
+
         [HttpPost]
-        [ValidateAntiForgeryToken]  // Đảm bảo token hợp lệ
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);
