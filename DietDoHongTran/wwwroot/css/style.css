@@ -88,3 +88,26 @@ footer {
     filter: invert(1);
 }
 
+.dropdown-menu {
+    min-width: 300px;
+    padding: 10px;
+}
+
+.dropdown-item {
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+    .dropdown-item:hover {
+        background-color: #f8f9fa;
+        font-weight: bold;
+    }
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Đảm bảo rằng menu dropdown sẽ bị ẩn khi không hover */
+.dropdown-menu {
+    display: none;
+}

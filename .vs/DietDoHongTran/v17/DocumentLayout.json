@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "E:\\Github Projects\\DietDoHongTran\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\dietdohongtran\\dietdohongtran\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\dietdohongtran\\dietdohongtran\\views\\shared\\components\\category\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\views\\shared\\components\\category\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\dietdohongtran\\dietdohongtran\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\dietdohongtran\\dietdohongtran\\viewcomponents\\categoryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\viewcomponents\\categoryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +22,45 @@
       "DocumentGroups": [
         {
           "DockedHeight": 10,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "DietDoHongTran\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "ToolTip": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Areas\\Admin\\Views\\Home\\Index.cshtml*",
-              "RelativeToolTip": "DietDoHongTran\\Areas\\Admin\\Views\\Home\\Index.cshtml*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACcAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CategoryViewComponent.cs",
+              "DocumentMoniker": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\ViewComponents\\CategoryViewComponent.cs",
+              "RelativeDocumentMoniker": "DietDoHongTran\\ViewComponents\\CategoryViewComponent.cs",
+              "ToolTip": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\ViewComponents\\CategoryViewComponent.cs",
+              "RelativeToolTip": "DietDoHongTran\\ViewComponents\\CategoryViewComponent.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwA4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T10:00:40.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DietDoHongTran\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAqwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-18T06:39:44.349Z",
+              "WhenOpened": "2025-03-18T09:48:52.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Views\\Shared\\Components\\Category\\Default.cshtml",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Views\\Shared\\Components\\Category\\Default.cshtml",
+              "ToolTip": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\Views\\Shared\\Components\\Category\\Default.cshtml",
+              "RelativeToolTip": "DietDoHongTran\\Views\\Shared\\Components\\Category\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T09:40:43.295Z",
               "EditorCaption": ""
             }
           ]

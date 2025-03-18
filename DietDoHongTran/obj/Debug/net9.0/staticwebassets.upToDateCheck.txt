@@ -14,6 +14,7 @@ E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\b
 E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\js\site.js
 E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
 E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\css\style.css
 E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
 E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\favicon.ico
 E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery\dist\jquery.js
@@ -36,6 +37,7 @@ E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\b
 E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
 E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.js
 E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\images\logo.svg
 E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery-validation\dist\jquery.validate.js
 E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
 E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
@@ -65,6 +67,7 @@ E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\
 wwwroot\css\admin.css
 wwwroot\css\productcss\add_product.css
 wwwroot\css\site.css
+wwwroot\css\style.css
 wwwroot\favicon.ico
 wwwroot\images\01682b08-027a-4c60-8c03-6599ac178ad4_quan-tai-go-trai-phat-giao-4.jpg
 wwwroot\images\4a311dbb-6bbb-4539-be8d-a587b1d19322_quan-tai-go-trai-phat-giao-4.jpg
@@ -76,6 +79,7 @@ wwwroot\images\d206da17-9aa3-4a18-8906-49803bf9c8dd_quantai.jpg
 wwwroot\images\de1862d4-3f60-4de5-8763-9d51decd2b68_admin_1366163367.png
 wwwroot\images\e16643fa-54c0-4990-90ff-3a0b597cc459_quantai.jpg
 wwwroot\images\f9e5f872-6aa7-4c55-832b-8c170e8bb93b_quan-tai-go-trai-phat-giao-4.jpg
+wwwroot\images\logo.svg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

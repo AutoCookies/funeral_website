@@ -26,5 +26,17 @@ namespace DietDoHongTran.Controllers
             }
             return View(product);
         }
+        public async Task<IActionResult> CategoryList()
+        {
+            var categories = await _categoryRepository.GetAllAsync();
+
+            // Kiểm tra dữ liệu trước khi truyền vào View
+            if (categories == null || !categories.Any())
+            {
+                return BadRequest("Không có danh mục nào được tìm thấy.");
+            }
+
+            return View(categories);
+        }
     }
 }

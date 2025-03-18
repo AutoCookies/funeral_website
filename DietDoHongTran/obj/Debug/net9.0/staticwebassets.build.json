@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "u1KQwWMfo93lStQ/GzNmfKaawPQtQhFNciHkZ5iao0E=",
+  "Hash": "c2GRnUhVsgff0W32+rozClrvdqFTMyKoiCZILT+O8Jc=",
   "Source": "DietDoHongTran",
   "BasePath": "_content/DietDoHongTran",
   "Mode": "Default",
@@ -1970,6 +1970,27 @@
       "OriginalItemSpec": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
+      "Identity": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\obj\\Debug\\net9.0\\compressed\\b12x280huc-9hzd3jol60.gz",
+      "SourceId": "DietDoHongTran",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/DietDoHongTran",
+      "RelativePath": "css/style#[.{fingerprint=9hzd3jol60}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\css\\style.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "hf1rqsgdfa",
+      "Integrity": "/cloyFWGQvhJAXINjl1by9GLGyTnMxzJzzj1x5U8bbI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\css\\style.css"
+    },
+    {
       "Identity": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\obj\\Debug\\net9.0\\compressed\\b9lhb08218-ttgo8qnofa.gz",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
@@ -2829,6 +2850,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\obj\\Debug\\net9.0\\compressed\\ms42ozpmcj-di3l0auoke.gz",
+      "SourceId": "DietDoHongTran",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/DietDoHongTran",
+      "RelativePath": "images/logo#[.{fingerprint=di3l0auoke}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\images\\logo.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "fvg97yjxi8",
+      "Integrity": "VaNlygLzrcrVcqM6b3sgty3EYD8VP5dMhlP/NMGu5sE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\images\\logo.svg"
     },
     {
       "Identity": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\obj\\Debug\\net9.0\\compressed\\nezrqnk58p-muycvpuwrr.gz",
@@ -4133,6 +4175,27 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\css\\style.css",
+      "SourceId": "DietDoHongTran",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\",
+      "BasePath": "_content/DietDoHongTran",
+      "RelativePath": "css/style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9hzd3jol60",
+      "Integrity": "3cOb1Uc2bK0x7XydsVIlC4eNYgATpbx3Q3vGET0mebw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
       "Identity": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\favicon.ico",
       "SourceId": "DietDoHongTran",
       "SourceType": "Discovered",
@@ -4362,6 +4425,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\f9e5f872-6aa7-4c55-832b-8c170e8bb93b_quan-tai-go-trai-phat-giao-4.jpg"
+    },
+    {
+      "Identity": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\images\\logo.svg",
+      "SourceId": "DietDoHongTran",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\",
+      "BasePath": "_content/DietDoHongTran",
+      "RelativePath": "images/logo#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "di3l0auoke",
+      "Integrity": "+7Iw8YWY38i/5NKDQnuKuoCv8dI+QR88ViT+cTHuNWs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.svg"
     },
     {
       "Identity": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\js\\site.js",
@@ -6574,6 +6658,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.9hzd3jol60.css",
+      "AssetFile": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\obj\\Debug\\net9.0\\compressed\\b12x280huc-9hzd3jol60.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001461988304"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "683"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/cloyFWGQvhJAXINjl1by9GLGyTnMxzJzzj1x5U8bbI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 07:52:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"3cOb1Uc2bK0x7XydsVIlC4eNYgATpbx3Q3vGET0mebw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9hzd3jol60"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3cOb1Uc2bK0x7XydsVIlC4eNYgATpbx3Q3vGET0mebw="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.9hzd3jol60.css",
+      "AssetFile": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1779"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3cOb1Uc2bK0x7XydsVIlC4eNYgATpbx3Q3vGET0mebw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 07:52:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9hzd3jol60"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3cOb1Uc2bK0x7XydsVIlC4eNYgATpbx3Q3vGET0mebw="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.9hzd3jol60.css.gz",
+      "AssetFile": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\obj\\Debug\\net9.0\\compressed\\b12x280huc-9hzd3jol60.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "683"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/cloyFWGQvhJAXINjl1by9GLGyTnMxzJzzj1x5U8bbI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 07:52:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9hzd3jol60"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/cloyFWGQvhJAXINjl1by9GLGyTnMxzJzzj1x5U8bbI="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.css",
+      "AssetFile": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\obj\\Debug\\net9.0\\compressed\\b12x280huc-9hzd3jol60.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001461988304"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "683"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/cloyFWGQvhJAXINjl1by9GLGyTnMxzJzzj1x5U8bbI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 07:52:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"3cOb1Uc2bK0x7XydsVIlC4eNYgATpbx3Q3vGET0mebw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3cOb1Uc2bK0x7XydsVIlC4eNYgATpbx3Q3vGET0mebw="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.css",
+      "AssetFile": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1779"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3cOb1Uc2bK0x7XydsVIlC4eNYgATpbx3Q3vGET0mebw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 07:52:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3cOb1Uc2bK0x7XydsVIlC4eNYgATpbx3Q3vGET0mebw="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.css.gz",
+      "AssetFile": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\obj\\Debug\\net9.0\\compressed\\b12x280huc-9hzd3jol60.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "683"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/cloyFWGQvhJAXINjl1by9GLGyTnMxzJzzj1x5U8bbI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 07:52:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/cloyFWGQvhJAXINjl1by9GLGyTnMxzJzzj1x5U8bbI="
         }
       ]
     },
@@ -16856,6 +17238,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-zyI8wN0/taDFKH1cKjkA2cSnnQA+KTWr8gNQTmHpuxg="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo.di3l0auoke.svg",
+      "AssetFile": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\obj\\Debug\\net9.0\\compressed\\ms42ozpmcj-di3l0auoke.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000088222320"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11334"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VaNlygLzrcrVcqM6b3sgty3EYD8VP5dMhlP/NMGu5sE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 07:06:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+7Iw8YWY38i/5NKDQnuKuoCv8dI+QR88ViT+cTHuNWs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "di3l0auoke"
+        },
+        {
+          "Name": "label",
+          "Value": "images/logo.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+7Iw8YWY38i/5NKDQnuKuoCv8dI+QR88ViT+cTHuNWs="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo.di3l0auoke.svg",
+      "AssetFile": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\images\\logo.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24853"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+7Iw8YWY38i/5NKDQnuKuoCv8dI+QR88ViT+cTHuNWs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 07:06:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "di3l0auoke"
+        },
+        {
+          "Name": "label",
+          "Value": "images/logo.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+7Iw8YWY38i/5NKDQnuKuoCv8dI+QR88ViT+cTHuNWs="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo.di3l0auoke.svg.gz",
+      "AssetFile": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\obj\\Debug\\net9.0\\compressed\\ms42ozpmcj-di3l0auoke.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11334"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VaNlygLzrcrVcqM6b3sgty3EYD8VP5dMhlP/NMGu5sE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 07:06:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "di3l0auoke"
+        },
+        {
+          "Name": "label",
+          "Value": "images/logo.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VaNlygLzrcrVcqM6b3sgty3EYD8VP5dMhlP/NMGu5sE="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo.svg",
+      "AssetFile": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\obj\\Debug\\net9.0\\compressed\\ms42ozpmcj-di3l0auoke.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000088222320"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11334"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VaNlygLzrcrVcqM6b3sgty3EYD8VP5dMhlP/NMGu5sE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 07:06:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+7Iw8YWY38i/5NKDQnuKuoCv8dI+QR88ViT+cTHuNWs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+7Iw8YWY38i/5NKDQnuKuoCv8dI+QR88ViT+cTHuNWs="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo.svg",
+      "AssetFile": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\images\\logo.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24853"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+7Iw8YWY38i/5NKDQnuKuoCv8dI+QR88ViT+cTHuNWs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 07:06:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+7Iw8YWY38i/5NKDQnuKuoCv8dI+QR88ViT+cTHuNWs="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo.svg.gz",
+      "AssetFile": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\obj\\Debug\\net9.0\\compressed\\ms42ozpmcj-di3l0auoke.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11334"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VaNlygLzrcrVcqM6b3sgty3EYD8VP5dMhlP/NMGu5sE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 07:06:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VaNlygLzrcrVcqM6b3sgty3EYD8VP5dMhlP/NMGu5sE="
         }
       ]
     },

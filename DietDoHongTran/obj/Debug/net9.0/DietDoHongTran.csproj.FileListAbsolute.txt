@@ -436,3 +436,5 @@ E:\Github Projects\DietDoHongTran\DietDoHongTran\obj\Debug\net9.0\compressed\c4x
 E:\Github Projects\DietDoHongTran\DietDoHongTran\obj\Debug\net9.0\compressed\r0gh84fwc2-m9qm4tazc0.gz
 E:\Github Projects\DietDoHongTran\DietDoHongTran\obj\Debug\net9.0\compressed\c6x2gq398j-jjsuc0puko.gz
 E:\Github Projects\DietDoHongTran\DietDoHongTran\obj\Debug\net9.0\compressed\2qjetjl9q7-9vr69e8ynj.gz
+E:\Github Projects\DietDoHongTran\DietDoHongTran\obj\Debug\net9.0\compressed\ms42ozpmcj-di3l0auoke.gz
+E:\Github Projects\DietDoHongTran\DietDoHongTran\obj\Debug\net9.0\compressed\b12x280huc-9hzd3jol60.gz

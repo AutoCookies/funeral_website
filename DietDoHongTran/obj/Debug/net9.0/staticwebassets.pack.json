@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -59,6 +63,10 @@
     {
       "Id": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\images\\f9e5f872-6aa7-4c55-832b-8c170e8bb93b_quan-tai-go-trai-phat-giao-4.jpg",
       "PackagePath": "staticwebassets\\images\\f9e5f872-6aa7-4c55-832b-8c170e8bb93b_quan-tai-go-trai-phat-giao-4.jpg"
+    },
+    {
+      "Id": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\images\\logo.svg",
+      "PackagePath": "staticwebassets\\images\\logo.svg"
     },
     {
       "Id": "E:\\Github Projects\\DietDoHongTran\\DietDoHongTran\\wwwroot\\js\\site.js",
