@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using DietDoHongTran.ViewModels;
 
 namespace DietDoHongTran.Models
 {
@@ -39,6 +40,14 @@ namespace DietDoHongTran.Models
                 .WithMany(c => c.Products)
                 .HasForeignKey(p => p.CategoryId)
                 .OnDelete(DeleteBehavior.SetNull);
+
+            modelBuilder.Entity<Product>()
+                .Property(p => p.Price)
+                .HasColumnType("decimal(18,2)"); // Chỉ định kiểu decimal với precision là 18 và scale là 2
+
+            modelBuilder.Entity<Service>()
+                .Property(s => s.BasePrice)
+                .HasColumnType("decimal(18,2)");
 
             // Định nghĩa khóa chính và auto-increment cho các bảng
             modelBuilder.Entity<Category>().HasKey(c => c.Id);

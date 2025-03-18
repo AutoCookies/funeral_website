@@ -1,0 +1,29 @@
+﻿@model List<DietDoHongTran.Models.Product>
+@{
+    ViewData["Title"] = ViewBag.CategoryName;
+}
+
+<h1>@ViewBag.CategoryName</h1>
+
+@if (Model != null && Model.Any())
+{
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="@product.ImageUrl" class="card-img-top" alt="@product.Name">
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Name</h5>
+                        <p class="card-text">Giá: @product.Price</p>
+                        <a asp-action="Display" asp-route-id="@product.Id" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>Không có sản phẩm nào thuộc danh mục này.</p>
+}

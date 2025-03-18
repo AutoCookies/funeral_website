@@ -1,4 +1,6 @@
-﻿namespace DietDoHongTran.Models
+﻿using DietDoHongTran.Models;
+
+namespace DietDoHongTran.ViewModels
 {
     public class ServiceProduct
     {

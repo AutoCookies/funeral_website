@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using DietDoHongTran.Models;
+using DietDoHongTran.ViewModels;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
-using DietDoHongTran.Models;
 
 namespace DietDoHongTran.ViewComponents
 {
@@ -17,13 +18,15 @@ namespace DietDoHongTran.ViewComponents
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var categories = await Task.Run(() => _context.Categories
-                .Select(c => new SelectListItem
-                {
-                    Value = c.Id.ToString(),
-                    Text = c.Name
-                })
-                .ToList());
+            var categories = await _context.Categories
+            .Select(c => new CategoryViewModel
+            {
+                Id = c.Id,
+                Name = c.Name,
+                // Gán Href sau khi Id đã có giá trị
+                Href = $"/Product/CategoryProducts?categoryId={c.Id}"
+            })
+            .ToListAsync();
 
             return View(categories);
         }

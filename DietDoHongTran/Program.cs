@@ -49,8 +49,15 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}"
+    pattern: "{controller=Product}/{action=Index}/{id?}"
 );
+
+app.MapControllerRoute(
+    name: "category",
+    pattern: "Products/CategoryProducts/{categoryId?}",
+    defaults: new { controller = "Products", action = "CategoryProducts" }
+);
+
 
 app.MapRazorPages();
 app.Run();

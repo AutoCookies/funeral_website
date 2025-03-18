@@ -1,9 +1,10 @@
-﻿@model IEnumerable<SelectListItem>
- <div class="p-2" aria-labelledby="categoryDropdown">
-        @foreach (var category in Model)
-        {
-            <a class="dropdown-item" href="@Url.Action("Category", "Product", new { categoryId = category.Value })">
-                @category.Text
-            </a>
-        }
- </div>
+﻿@model List<DietDoHongTran.ViewModels.CategoryViewModel>
+
+<div class="p-2" aria-labelledby="categoryDropdown">
+    @foreach (var category in Model)
+    {
+        <a class="dropdown-item" href="@category.Href">
+            @category.Name
+        </a>
+    }
+</div>

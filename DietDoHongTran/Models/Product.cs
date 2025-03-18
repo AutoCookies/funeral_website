@@ -1,4 +1,4 @@
-﻿using DietDoHongTran.Models;
+﻿using DietDoHongTran.ViewModels;
 using System.ComponentModel.DataAnnotations;
 
 namespace DietDoHongTran.Models
