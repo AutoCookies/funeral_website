@@ -13,6 +13,10 @@ namespace DietDoHongTran.Models
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<ServiceProduct> ServiceProducts { get; set; } // Thêm DbSet bảng trung gian
+        public DbSet<ShoppingCart> ShoppingCart { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

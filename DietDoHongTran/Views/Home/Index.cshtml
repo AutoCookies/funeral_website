@@ -9,6 +9,8 @@
         .ThenBy(p => p.Id)
         .Take(3)
         .ToList();
+
+    int numOfQuantity = 1;
 }
 
 <div class="container mt-5">
@@ -64,6 +66,10 @@
                         <p class="card-text"><strong>In Stock:</strong> @product.Instock</p>
                         <a href="@Url.Action("Display", "Product", new { id = product.Id })" class="btn btn-primary w-100">
                             <i class="fas fa-eye"></i> View Details
+                        </a>
+                        <a asp-controller="ShoppingCart" asp-action="AddToCart"
+                           asp-route-productId="@product.Id" asp-route-quantity="@numOfQuantity">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
                         </a>
                     </div>
                 </div>

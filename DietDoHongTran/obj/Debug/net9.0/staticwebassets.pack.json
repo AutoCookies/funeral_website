@@ -1,327 +1,331 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\DietDoHongTran.bundle.scp.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\DietDoHongTran.bundle.scp.css",
       "PackagePath": "staticwebassets\\DietDoHongTran.3ydvsz46ay.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\css\\admin.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\css\\admin.css",
       "PackagePath": "staticwebassets\\css\\admin.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\css\\productcss\\add_product.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\css\\productcss\\add_product.css",
       "PackagePath": "staticwebassets\\css\\productcss\\add_product.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\css\\site.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\css\\style.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\favicon.ico",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\images\\01682b08-027a-4c60-8c03-6599ac178ad4_quan-tai-go-trai-phat-giao-4.jpg",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\01682b08-027a-4c60-8c03-6599ac178ad4_quan-tai-go-trai-phat-giao-4.jpg",
       "PackagePath": "staticwebassets\\images\\01682b08-027a-4c60-8c03-6599ac178ad4_quan-tai-go-trai-phat-giao-4.jpg"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\images\\0dfb704c-0469-4471-890e-459cae43b769_z6436211968991_64b555da9c7ee94c1fc6421a00739e75.jpg",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\05f6d49c-df66-4cc6-bc86-18a444da6e86_quan-tai-go-trai-phat-giao-4.jpg",
+      "PackagePath": "staticwebassets\\images\\05f6d49c-df66-4cc6-bc86-18a444da6e86_quan-tai-go-trai-phat-giao-4.jpg"
+    },
+    {
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\0dfb704c-0469-4471-890e-459cae43b769_z6436211968991_64b555da9c7ee94c1fc6421a00739e75.jpg",
       "PackagePath": "staticwebassets\\images\\0dfb704c-0469-4471-890e-459cae43b769_z6436211968991_64b555da9c7ee94c1fc6421a00739e75.jpg"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\images\\47c230d4-9bc6-49da-962f-f0ca1c675efb_qtkl1.jpg",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\47c230d4-9bc6-49da-962f-f0ca1c675efb_qtkl1.jpg",
       "PackagePath": "staticwebassets\\images\\47c230d4-9bc6-49da-962f-f0ca1c675efb_qtkl1.jpg"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\images\\4a311dbb-6bbb-4539-be8d-a587b1d19322_quan-tai-go-trai-phat-giao-4.jpg",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\4a311dbb-6bbb-4539-be8d-a587b1d19322_quan-tai-go-trai-phat-giao-4.jpg",
       "PackagePath": "staticwebassets\\images\\4a311dbb-6bbb-4539-be8d-a587b1d19322_quan-tai-go-trai-phat-giao-4.jpg"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\images\\8baf66d6-4c36-420f-ae05-bc9b4839603c_qtve1.jpg",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\8baf66d6-4c36-420f-ae05-bc9b4839603c_qtve1.jpg",
       "PackagePath": "staticwebassets\\images\\8baf66d6-4c36-420f-ae05-bc9b4839603c_qtve1.jpg"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\images\\8ea6d048-f5f4-4f6c-8f7d-24bf01f2496c_quan-tai-go-trai-phat-giao-4.jpg",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\8ea6d048-f5f4-4f6c-8f7d-24bf01f2496c_quan-tai-go-trai-phat-giao-4.jpg",
       "PackagePath": "staticwebassets\\images\\8ea6d048-f5f4-4f6c-8f7d-24bf01f2496c_quan-tai-go-trai-phat-giao-4.jpg"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\images\\927bb290-3bb4-4290-ad0d-bf5f69a5a92d_quantai.jpg",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\927bb290-3bb4-4290-ad0d-bf5f69a5a92d_quantai.jpg",
       "PackagePath": "staticwebassets\\images\\927bb290-3bb4-4290-ad0d-bf5f69a5a92d_quantai.jpg"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\images\\a3375c4a-8f9a-4d56-aad4-46e0cf510815_quan-tai-go-trai-phat-giao-4.jpg",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\a3375c4a-8f9a-4d56-aad4-46e0cf510815_quan-tai-go-trai-phat-giao-4.jpg",
       "PackagePath": "staticwebassets\\images\\a3375c4a-8f9a-4d56-aad4-46e0cf510815_quan-tai-go-trai-phat-giao-4.jpg"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\images\\d1e4d5a3-2f92-4b8a-a5d4-d31c8d82532a_cac-loai-quan-tai-3-1024x576.jpg",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\d1e4d5a3-2f92-4b8a-a5d4-d31c8d82532a_cac-loai-quan-tai-3-1024x576.jpg",
       "PackagePath": "staticwebassets\\images\\d1e4d5a3-2f92-4b8a-a5d4-d31c8d82532a_cac-loai-quan-tai-3-1024x576.jpg"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\images\\d206da17-9aa3-4a18-8906-49803bf9c8dd_quantai.jpg",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\d206da17-9aa3-4a18-8906-49803bf9c8dd_quantai.jpg",
       "PackagePath": "staticwebassets\\images\\d206da17-9aa3-4a18-8906-49803bf9c8dd_quantai.jpg"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\images\\de1862d4-3f60-4de5-8763-9d51decd2b68_admin_1366163367.png",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\de1862d4-3f60-4de5-8763-9d51decd2b68_admin_1366163367.png",
       "PackagePath": "staticwebassets\\images\\de1862d4-3f60-4de5-8763-9d51decd2b68_admin_1366163367.png"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\images\\e16643fa-54c0-4990-90ff-3a0b597cc459_quantai.jpg",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\e16643fa-54c0-4990-90ff-3a0b597cc459_quantai.jpg",
       "PackagePath": "staticwebassets\\images\\e16643fa-54c0-4990-90ff-3a0b597cc459_quantai.jpg"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\images\\f9e5f872-6aa7-4c55-832b-8c170e8bb93b_quan-tai-go-trai-phat-giao-4.jpg",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\f9e5f872-6aa7-4c55-832b-8c170e8bb93b_quan-tai-go-trai-phat-giao-4.jpg",
       "PackagePath": "staticwebassets\\images\\f9e5f872-6aa7-4c55-832b-8c170e8bb93b_quan-tai-go-trai-phat-giao-4.jpg"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\images\\logo.svg",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\logo.svg",
       "PackagePath": "staticwebassets\\images\\logo.svg"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\js\\site.js",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
