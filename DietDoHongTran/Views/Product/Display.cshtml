@@ -5,6 +5,34 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<style>
+    /* Ẩn mũi tên lên xuống trong input number */
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+
+    /* Tùy chỉnh giao diện nút + - */
+    .quantity-btn {
+        width: 38px;
+        height: 38px;
+        font-weight: bold;
+        border: 1px solid #ced4da;
+        background-color: #f8f9fa;
+    }
+
+    .quantity-input {
+        text-align: center;
+        border-left: none;
+        border-right: none;
+    }
+</style>
+
 <div class="container mt-4">
     <div class="card shadow-sm">
         <div class="card-header bg-primary text-white">
@@ -16,40 +44,142 @@
                 <div class="col-md-4 text-center">
                     @if (!string.IsNullOrEmpty(Model.ImageUrl))
                     {
-                        <img src="@Model.ImageUrl" alt="@Model.Name" class="img-fluid rounded" style="max-width: 100%;">
+                        <img src="@Model.ImageUrl" alt="@Model.Name" class="img-fluid rounded mb-3" style="max-height: 300px; object-fit: contain;">
                     }
                     else
                     {
-                        <p class="text-muted">Không có ảnh</p>
+                        <div class="bg-light d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <p class="text-muted">Không có ảnh</p>
+                        </div>
                     }
                 </div>
 
                 <!-- Thông tin sản phẩm -->
                 <div class="col-md-8">
-                    <table class="table table-borderless">
-                        <tr>
-                            <th>Tên sản phẩm:</th>
-                            <td>@Html.DisplayFor(model => model.Name)</td>
-                        </tr>
-                        <tr>
-                            <th>Giá:</th>
-                            <td><strong class="text-danger">@string.Format("{0:N0}", Model.Price) VND</strong></td>
-                        </tr>
-                        <tr>
-                            <th>Mô tả:</th>
-                            <td>@Html.DisplayFor(model => model.Description)</td>
-                        </tr>
-                        <tr>
-                            <th>Loại sản phẩm:</th>
-                            <td>@Html.DisplayFor(model => model.Category.Name)</td>
-                        </tr>
-                    </table>
+                    <h4 class="text-primary">@Model.Name</h4>
+                    <hr>
+
+                    <div class="mb-3">
+                        <h5 class="text-danger">@string.Format("{0:N0}", Model.Price) VND</h5>
+                    </div>
+
+                    <div class="mb-3">
+                        <h6>Mô tả sản phẩm:</h6>
+                        <p>@Model.Description</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <h6>Loại sản phẩm:</h6>
+                        <p>@Model.Category.Name</p>
+                    </div>
+
+                    <!-- Phần chọn số lượng -->
+                    <div class="mb-4">
+                        <h6>Số lượng:</h6>
+                        <div class="input-group" style="width: 150px;">
+                            <button class="btn quantity-btn" type="button" id="decrement">-</button>
+                            <input type="number" class="form-control quantity-input" id="quantity" value="1" min="1" max="100">
+                            <button class="btn quantity-btn" type="button" id="increment">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Nút hành động -->
+                    <div class="d-flex gap-2">
+                        <a href="@ViewBag.ReturnUrl" class="btn btn-outline-secondary flex-grow-1">
+                            <i class="fas fa-arrow-left me-2"></i>Quay lại
+                        </a>
+                        <button class="btn btn-success flex-grow-1" id="btn-order">
+                            <i class="fas fa-cart-plus me-2"></i>Thêm vào giỏ
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="card-footer text-end">
-            <a href="@ViewBag.ReturnUrl" class="btn btn-secondary">Quay lại</a>
-        </div>
     </div>
 </div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const quantityInput = document.getElementById('quantity');
+            const incrementBtn = document.getElementById('increment');
+            const decrementBtn = document.getElementById('decrement');
+            const orderBtn = document.getElementById('btn-order');
+
+            // Tăng số lượng
+            incrementBtn.addEventListener('click', function() {
+                let value = parseInt(quantityInput.value);
+                if (value < 100) {
+                    quantityInput.value = value + 1;
+                }
+            });
+
+            // Giảm số lượng
+            decrementBtn.addEventListener('click', function() {
+                let value = parseInt(quantityInput.value);
+                if (value > 1) {
+                    quantityInput.value = value - 1;
+                }
+            });
+
+            // Validate khi nhập trực tiếp
+            quantityInput.addEventListener('change', function() {
+                let value = parseInt(this.value);
+                if (isNaN(value) || value < 1) {
+                    this.value = 1;
+                } else if (value > 100) {
+                    this.value = 100;
+                }
+            });
+
+            // Xử lý nút đặt hàng
+            orderBtn.addEventListener('click', function() {
+                const quantity = parseInt(quantityInput.value);
+                const productId = @Model.Id;
+
+                // Hiển thị thông báo
+                const toast = document.createElement('div');
+                toast.className = 'position-fixed bottom-0 end-0 p-3';
+                toast.style.zIndex = '11';
+                toast.innerHTML = `
+                    <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header bg-success text-white">
+                            <strong class="me-auto">Thành công</strong>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                            Đã thêm ${quantity} sản phẩm vào giỏ hàng
+                        </div>
+                    </div>
+                `;
+                document.body.appendChild(toast);
+
+                // Tự động ẩn thông báo sau 3 giây
+                setTimeout(() => {
+                    toast.remove();
+                }, 3000);
+
+                // Gọi API thêm vào giỏ hàng (ví dụ)
+                /*
+                fetch('/Cart/AddToCart', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        productId: productId,
+                        quantity: quantity
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Cập nhật số lượng giỏ hàng trên header nếu cần
+                })
+                .catch(error => {
+                    alert('Có lỗi xảy ra khi thêm vào giỏ hàng');
+                });
+                */
+            });
+        });
+    </script>
+}

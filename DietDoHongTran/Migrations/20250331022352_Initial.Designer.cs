@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DietDoHongTran.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250318052148_Initial")]
+    [Migration("20250331022352_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -204,7 +204,7 @@ namespace DietDoHongTran.Migrations
                     b.ToTable("Services");
                 });
 
-            modelBuilder.Entity("DietDoHongTran.Models.ServiceProduct", b =>
+            modelBuilder.Entity("DietDoHongTran.ViewModels.ServiceProduct", b =>
                 {
                     b.Property<int>("ServiceId")
                         .HasColumnType("int");
@@ -373,7 +373,7 @@ namespace DietDoHongTran.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("DietDoHongTran.Models.ServiceProduct", b =>
+            modelBuilder.Entity("DietDoHongTran.ViewModels.ServiceProduct", b =>
                 {
                     b.HasOne("DietDoHongTran.Models.Product", "Product")
                         .WithMany("ServiceProducts")
