@@ -21,7 +21,7 @@
         @foreach (var item in Model.InvoiceDetails)
         {
             <tr>
-                <td>@item.ProductId</td>
+                <td>@(ViewBag.ProductNames.ContainsKey(item.ProductId) ? ViewBag.ProductNames[item.ProductId] : "Không xác định")</td>
                 <td>@item.Quantity</td>
                 <td>@string.Format("{0:0,0} VNĐ", item.Price)</td>
                 <td>@string.Format("{0:0,0} VNĐ", item.Quantity * item.Price)</td>

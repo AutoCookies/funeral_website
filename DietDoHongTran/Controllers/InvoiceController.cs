@@ -118,7 +118,6 @@ namespace DietDoHongTran.Controllers
             return RedirectToAction("InvoiceDetails", new { id = invoice.Id });
         }
 
-        [HttpGet]
         public async Task<IActionResult> InvoiceDetails(int id)
         {
             var invoice = await _context.Invoices
@@ -130,9 +129,14 @@ namespace DietDoHongTran.Controllers
                 return NotFound();
             }
 
+            // Tạo dictionary ánh xạ ProductId -> ProductName
+            var productNames = await _context.Products
+                .ToDictionaryAsync(p => p.Id, p => p.Name);
+
+            ViewBag.ProductNames = productNames;
+
             return View(invoice);
         }
-
 
         // Action để hiển thị trang cảm ơn
         public IActionResult ThankYou()
