@@ -129,5 +129,24 @@ namespace DietDoHongTran.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public IActionResult GetCartCount()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userId == null)
+            {
+                return Json(new { count = 0 });
+            }
+
+            var cart = _context.ShoppingCarts
+                .Include(c => c.Items)
+                .FirstOrDefault(c => c.ApplicationUserId == userId);
+
+            int itemCount = cart?.Items.Sum(i => i.Quantity) ?? 0;
+
+            return Json(new { count = itemCount });
+        }
+
     }
 }

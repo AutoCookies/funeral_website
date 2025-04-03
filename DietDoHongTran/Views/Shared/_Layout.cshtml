@@ -65,21 +65,20 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script>
         function updateCartCount() {
-            // Fetch the cart count from the controller
             fetch('/ShoppingCart/GetCartCount')
                 .then(response => response.json())
                 .then(data => {
-                    // Update the cart item count in the UI
-                    document.getElementById('cartCount').innerText = data.count;
+                    let cartCountElement = document.getElementById('cartCount');
+                    cartCountElement.innerText = data.count;
+                    cartCountElement.style.display = data.count > 0 ? 'inline-block' : 'none';
                 })
-                .catch(error => console.error('Error updating cart count:', error));
+                .catch(error => console.error('Lỗi khi cập nhật giỏ hàng:', error));
         }
 
         document.addEventListener("DOMContentLoaded", function () {
-            updateCartCount();  // Update the cart count when the page loads
+            updateCartCount();
         });
     </script>
 
