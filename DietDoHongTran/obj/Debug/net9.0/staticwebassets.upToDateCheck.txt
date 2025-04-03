@@ -1,76 +1,79 @@
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery\LICENSE.txt
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery\dist\jquery.slim.min.js
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery-validation\dist\additional-methods.js
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery\dist\jquery.slim.min.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\js\site.js
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\css\style.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\favicon.ico
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery\dist\jquery.js
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery\dist\jquery.slim.js
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery\dist\jquery.min.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.js
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\images\logo.svg
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery-validation\dist\jquery.validate.js
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\css\site.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery\dist\jquery.min.js
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\css\productcss\add_product.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\css\admin.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\jquery-validation\LICENSE.md
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
-E:\Github Projects\DietDoHongTran\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\jquery\dist\jquery.slim.min.js
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\jquery-validation\dist\additional-methods.js
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\jquery\dist\jquery.slim.min.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\js\site.js
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\css\style.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\favicon.ico
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\jquery\dist\jquery.js
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\jquery\dist\jquery.slim.js
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\jquery\dist\jquery.min.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\images\logo.svg
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\css\site.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\jquery\dist\jquery.min.js
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\css\productcss\add_product.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\css\admin.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\jquery-validation\LICENSE.md
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+C:\Users\ADMIN\OneDrive\Documents\GitHub\funeral_website\DietDoHongTran\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
 wwwroot\css\admin.css
 wwwroot\css\productcss\add_product.css
 wwwroot\css\site.css
 wwwroot\css\style.css
 wwwroot\favicon.ico
 wwwroot\images\01682b08-027a-4c60-8c03-6599ac178ad4_quan-tai-go-trai-phat-giao-4.jpg
+wwwroot\images\0dfb704c-0469-4471-890e-459cae43b769_z6436211968991_64b555da9c7ee94c1fc6421a00739e75.jpg
+wwwroot\images\47c230d4-9bc6-49da-962f-f0ca1c675efb_qtkl1.jpg
 wwwroot\images\4a311dbb-6bbb-4539-be8d-a587b1d19322_quan-tai-go-trai-phat-giao-4.jpg
+wwwroot\images\8baf66d6-4c36-420f-ae05-bc9b4839603c_qtve1.jpg
 wwwroot\images\8ea6d048-f5f4-4f6c-8f7d-24bf01f2496c_quan-tai-go-trai-phat-giao-4.jpg
 wwwroot\images\927bb290-3bb4-4290-ad0d-bf5f69a5a92d_quantai.jpg
 wwwroot\images\a3375c4a-8f9a-4d56-aad4-46e0cf510815_quan-tai-go-trai-phat-giao-4.jpg
