@@ -97,6 +97,32 @@ namespace DietDoHongTran.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("DietDoHongTran.Models.CartItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ShoppingCartId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("ShoppingCartId");
+
+                    b.ToTable("CartItems");
+                });
+
             modelBuilder.Entity("DietDoHongTran.Models.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -263,6 +289,26 @@ namespace DietDoHongTran.Migrations
                     b.ToTable("Services");
                 });
 
+            modelBuilder.Entity("DietDoHongTran.Models.ShoppingCart", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ApplicationUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId")
+                        .IsUnique();
+
+                    b.ToTable("ShoppingCarts");
+                });
+
             modelBuilder.Entity("DietDoHongTran.ViewModels.ServiceProduct", b =>
                 {
                     b.Property<int>("ServiceId")
@@ -411,6 +457,25 @@ namespace DietDoHongTran.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("DietDoHongTran.Models.CartItem", b =>
+                {
+                    b.HasOne("DietDoHongTran.Models.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DietDoHongTran.Models.ShoppingCart", "ShoppingCart")
+                        .WithMany("Items")
+                        .HasForeignKey("ShoppingCartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("ShoppingCart");
+                });
+
             modelBuilder.Entity("DietDoHongTran.Models.Order", b =>
                 {
                     b.HasOne("DietDoHongTran.Models.ApplicationUser", "ApplicationUser")
@@ -460,6 +525,17 @@ namespace DietDoHongTran.Migrations
                         .IsRequired();
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("DietDoHongTran.Models.ShoppingCart", b =>
+                {
+                    b.HasOne("DietDoHongTran.Models.ApplicationUser", "ApplicationUser")
+                        .WithOne("ShoppingCart")
+                        .HasForeignKey("DietDoHongTran.Models.ShoppingCart", "ApplicationUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ApplicationUser");
                 });
 
             modelBuilder.Entity("DietDoHongTran.ViewModels.ServiceProduct", b =>
@@ -532,6 +608,12 @@ namespace DietDoHongTran.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("DietDoHongTran.Models.ApplicationUser", b =>
+                {
+                    b.Navigation("ShoppingCart")
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("DietDoHongTran.Models.Category", b =>
                 {
                     b.Navigation("Products");
@@ -552,6 +634,11 @@ namespace DietDoHongTran.Migrations
             modelBuilder.Entity("DietDoHongTran.Models.Service", b =>
                 {
                     b.Navigation("ServiceProducts");
+                });
+
+            modelBuilder.Entity("DietDoHongTran.Models.ShoppingCart", b =>
+                {
+                    b.Navigation("Items");
                 });
 #pragma warning restore 612, 618
         }

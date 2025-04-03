@@ -13,10 +13,10 @@ namespace DietDoHongTran.Models
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<ServiceProduct> ServiceProducts { get; set; } // Thêm DbSet bảng trung gian
-        public DbSet<ShoppingCart> ShoppingCart { get; set; }
+        public DbSet<ShoppingCart> ShoppingCarts { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
-
+        public DbSet<CartItem> CartItems { get; set; } // Thêm DbSet cho CartItem
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -52,6 +52,18 @@ namespace DietDoHongTran.Models
             modelBuilder.Entity<Service>()
                 .Property(s => s.BasePrice)
                 .HasColumnType("decimal(18,2)");
+
+            // Thiết lập mối quan hệ giữa ApplicationUser và ShoppingCart
+            modelBuilder.Entity<ApplicationUser>()
+                .HasOne(u => u.ShoppingCart)
+                .WithOne(sc => sc.ApplicationUser)
+                .HasForeignKey<ShoppingCart>(sc => sc.ApplicationUserId);
+
+            // Thiết lập mối quan hệ giữa ShoppingCart và CartItem
+            modelBuilder.Entity<ShoppingCart>()
+                .HasMany(sc => sc.Items)
+                .WithOne(ci => ci.ShoppingCart)
+                .HasForeignKey(ci => ci.ShoppingCartId);
 
             // Định nghĩa khóa chính và auto-increment cho các bảng
             modelBuilder.Entity<Category>().HasKey(c => c.Id);

@@ -1,104 +1,133 @@
 ﻿using DietDoHongTran.Models;
-using DietDoHongTran.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace DietDoHongTran.Controllers
 {
-    [Authorize]
+    [Authorize] // Yêu cầu đăng nhập để truy cập ShoppingCart
     public class ShoppingCartController : Controller
     {
-        private readonly IProductRepository _productRepository;
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
 
-        public ShoppingCartController(ApplicationDbContext context,
-            UserManager<ApplicationUser> userManager, IProductRepository
-            productRepository)
+        public ShoppingCartController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
         {
-            _productRepository = productRepository;
             _context = context;
             _userManager = userManager;
         }
-        public async Task<IActionResult> AddToCart(int productId, int quantity)
+
+        // 📌 Lấy giỏ hàng của người dùng
+        public async Task<IActionResult> Index()
         {
-            // Giả sử bạn có phương thức lấy thông tin sản phẩm từ productId
-            var product = await GetProductFromDatabase(productId);
-            var cartItem = new CartItem
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userId == null) return RedirectToAction("Login", "Account");
+
+            var shoppingCart = await _context.ShoppingCarts
+                .Include(sc => sc.Items)
+                .ThenInclude(ci => ci.Product)
+                .FirstOrDefaultAsync(sc => sc.ApplicationUserId == userId);
+
+            return View(shoppingCart);
+        }
+
+        // 📌 Thêm sản phẩm vào giỏ hàng
+        public async Task<IActionResult> AddToCart(int productId, int quantity = 1)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userId == null) return RedirectToAction("Login", "Account");
+
+            var product = await _context.Products.FindAsync(productId);
+            if (product == null) return NotFound();
+
+            var shoppingCart = await _context.ShoppingCarts
+                .Include(sc => sc.Items)
+                .FirstOrDefaultAsync(sc => sc.ApplicationUserId == userId);
+
+            if (shoppingCart == null)
             {
-                ProductId = productId,
-                Name = product.Name,
-                Price = product.Price,
-                Quantity = quantity
-            };
-            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ??
-            new ShoppingCart();
-            cart.AddItem(cartItem);
-            HttpContext.Session.SetObjectAsJson("Cart", cart);
-            return RedirectToAction("Index");
-        }
-        public IActionResult Index()
-        {
-            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ??
-                new ShoppingCart();
-            return View(cart);
-        }
-        // Các actions khác...
-        private async Task<Product> GetProductFromDatabase(int productId)
-        {
-            // Truy vấn cơ sở dữ liệu để lấy thông tin sản phẩm
-            var product = await _productRepository.GetByIdAsync(productId);
-            return product;
-        }
-        public IActionResult RemoveFromCart(int productId)
-        {
-            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
-            if (cart is not null)
-            {
-                cart.RemoveItem(productId);
-                // Lưu lại giỏ hàng vào Session sau khi đã xóa mục
-                HttpContext.Session.SetObjectAsJson("Cart", cart);
+                shoppingCart = new ShoppingCart
+                {
+                    ApplicationUserId = userId,
+                    Items = new List<CartItem>()
+                };
+                _context.ShoppingCarts.Add(shoppingCart);
             }
+
+            var cartItem = shoppingCart.Items.FirstOrDefault(ci => ci.ProductId == productId);
+            if (cartItem == null)
+            {
+                cartItem = new CartItem
+                {
+                    ProductId = productId,
+                    Quantity = quantity
+                };
+                shoppingCart.Items.Add(cartItem);
+            }
+            else
+            {
+                cartItem.Quantity += quantity;
+            }
+
+            await _context.SaveChangesAsync();
             return RedirectToAction("Index");
         }
 
-        public IActionResult Checkout()
+        // 📌 Cập nhật số lượng sản phẩm trong giỏ hàng
+        [HttpPost]
+        public async Task<IActionResult> UpdateCartItem(int cartItemId, int quantity)
         {
-            return View(new Order());
-        }
-        [
-        HttpPost]
-        public async Task<IActionResult> Checkout(Order order)
-        {
-            var cart =
-            HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
-            if (cart == null || !cart.Items.Any())
+            var cartItem = await _context.CartItems.FindAsync(cartItemId);
+            if (cartItem == null) return NotFound();
+
+            if (quantity <= 0)
             {
-                // Xử lý giỏ hàng trống...
-                return RedirectToAction("Index");
+                _context.CartItems.Remove(cartItem);
             }
-            var user = await _userManager.GetUserAsync(User);
-            order.UserId = user.Id;
-            order.OrderDate = DateTime.UtcNow;
-            order.TotalPrice = cart.Items.Sum(i => i.Price *
-            i.Quantity);
-            order.OrderDetails = cart.Items.Select(i => new OrderDetail
+            else
             {
-                ProductId = i.ProductId,
-                Quantity = i.Quantity,
-                Price = i.Price
-            }).ToList();
-            _context.Orders.Add(order);
+                cartItem.Quantity = quantity;
+                _context.CartItems.Update(cartItem);
+            }
+
             await _context.SaveChangesAsync();
-            HttpContext.Session.Remove("Cart");
-            return View("OrderCompleted", order.Id); // Trang xác nhận hoàn thành đơn hàng
+            return RedirectToAction("Index");
         }
-        public JsonResult GetCartCount()
+
+        // 📌 Xóa một sản phẩm khỏi giỏ hàng
+        public async Task<IActionResult> RemoveFromCart(int cartItemId)
         {
-            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
-            var itemCount = cart.Items.Sum(i => i.Quantity); // Count the total quantity of items in the cart
-            return Json(new { count = itemCount });
+            var cartItem = await _context.CartItems.FindAsync(cartItemId);
+            if (cartItem == null) return NotFound();
+
+            _context.CartItems.Remove(cartItem);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+
+        // 📌 Xóa toàn bộ giỏ hàng
+        public async Task<IActionResult> ClearCart()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userId == null) return RedirectToAction("Login", "Account");
+
+            var shoppingCart = await _context.ShoppingCarts
+                .Include(sc => sc.Items)
+                .FirstOrDefaultAsync(sc => sc.ApplicationUserId == userId);
+
+            if (shoppingCart != null)
+            {
+                _context.CartItems.RemoveRange(shoppingCart.Items);
+                shoppingCart.Items.Clear();
+                _context.ShoppingCarts.Update(shoppingCart);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
         }
     }
 }
