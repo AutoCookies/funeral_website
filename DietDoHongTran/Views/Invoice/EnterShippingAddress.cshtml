@@ -1,0 +1,39 @@
+﻿@model DietDoHongTran.Models.Invoice
+
+<h2>🛒 Nhập thông tin giao hàng</h2>
+
+<form asp-action="CreateInvoiceFromCart" method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label for="ShippingAddress">Địa chỉ giao hàng</label>
+        <input type="text" class="form-control" id="ShippingAddress" name="ShippingAddress" placeholder="Nhập địa chỉ giao hàng" value="@Model.ShippingAddress" required />
+    </div>
+
+    <div class="form-group">
+        <label for="ShippingCity">Thành phố</label>
+        <input type="text" class="form-control" id="ShippingCity" name="ShippingCity" placeholder="Nhập thành phố" value="@Model.ShippingCity" required />
+    </div>
+
+    <div class="form-group">
+        <label for="ShippingPostalCode">Mã bưu điện</label>
+        <input type="text" class="form-control" id="ShippingPostalCode" name="ShippingPostalCode" placeholder="Nhập mã bưu điện" value="@Model.ShippingPostalCode" required />
+    </div>
+
+    <div class="form-group">
+        <label for="ShippingCountry">Quốc gia</label>
+        <input type="text" class="form-control" id="ShippingCountry" name="ShippingCountry" placeholder="Nhập quốc gia" value="@Model.ShippingCountry" required />
+    </div>
+
+    <!-- Hiển thị tổng tiền bao gồm sản phẩm và phí vận chuyển -->
+    <div class="mt-3">
+        <p><strong>Tổng tiền sản phẩm: </strong>@string.Format("{0:0,0} VNĐ", Model.TotalAmount - 256000)</p>
+        <p><strong>Phí vận chuyển: </strong>@string.Format("{0:0,0} VNĐ", 256000)</p>
+        <p><strong>Tổng cộng: </strong>@string.Format("{0:0,0} VNĐ", Model.TotalAmount)</p>
+    </div>
+
+    <div class="d-flex justify-content-between mt-3">
+        <a asp-controller="ShoppingCart" asp-action="Index" class="btn btn-warning">🔙 Quay lại giỏ hàng</a>
+        <button type="submit" class="btn btn-success">Hoàn tất thanh toán</button>
+    </div>
+</form>

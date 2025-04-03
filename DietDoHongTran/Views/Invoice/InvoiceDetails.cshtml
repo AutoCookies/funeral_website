@@ -1,0 +1,35 @@
+﻿@model DietDoHongTran.Models.Invoice
+
+<h2>📜 Chi tiết hóa đơn</h2>
+
+<p><strong>Mã hóa đơn:</strong> @Model.Id</p>
+<p><strong>Người mua:</strong> @User.Identity.Name</p>
+<p><strong>Địa chỉ giao hàng:</strong> @Model.ShippingAddress, @Model.ShippingCity, @Model.ShippingCountry</p>
+<p><strong>Ngày đặt hàng:</strong> @Model.CreatedAt.ToString("dd/MM/yyyy HH:mm")</p>
+
+<h3>🛒 Sản phẩm</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Giá</th>
+            <th>Tổng</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.InvoiceDetails)
+        {
+            <tr>
+                <td>@item.ProductId</td>
+                <td>@item.Quantity</td>
+                <td>@string.Format("{0:0,0} VNĐ", item.Price)</td>
+                <td>@string.Format("{0:0,0} VNĐ", item.Quantity * item.Price)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3><strong>Tổng cộng: </strong>@string.Format("{0:0,0} VNĐ", Model.TotalAmount)</h3>
+
+<a asp-controller="Product" asp-action="Index" class="btn btn-primary">🏠 Về trang chủ</a>

@@ -1,4 +1,4 @@
-﻿@model ShoppingCart
+﻿@model DietDoHongTran.Models.ShoppingCart
 
 <h2>🛒 Giỏ hàng của bạn</h2>
 
@@ -25,6 +25,7 @@ else
                     <td>@item.Product.Name</td>
                     <td>
                         <form asp-controller="ShoppingCart" asp-action="UpdateCartItem" method="post" class="d-flex">
+                            @Html.AntiForgeryToken()
                             <input type="hidden" name="cartItemId" value="@item.Id" />
                             <input type="number" name="quantity" value="@item.Quantity" min="1" class="form-control w-50 text-center" />
                             <button type="submit" class="btn btn-primary btn-sm ms-2">Cập nhật</button>
@@ -45,7 +46,14 @@ else
     <h4 class="mt-3">Tổng cộng: <b>@string.Format("{0:0,0} VNĐ", Model.Items.Sum(i => i.Product.Price * i.Quantity))</b></h4>
 
     <div class="d-flex justify-content-between mt-3">
-        <a asp-action="ClearCart" class="btn btn-warning">🗑️ Xóa toàn bộ</a>
-        <a asp-action="Checkout" class="btn btn-success">💳 Thanh toán</a>
+        <a asp-controller="ShoppingCart" asp-action="ClearCart" class="btn btn-warning">🗑️ Xóa toàn bộ</a>
+
+        <!-- Form gửi POST đến InvoiceController.EnterShippingAddress để nhập địa chỉ giao hàng -->
+        <form asp-controller="Invoice" asp-action="EnterShippingAddress" method="get" class="d-inline">
+            @Html.AntiForgeryToken()
+            <button type="submit" class="btn btn-success">💳 Thanh toán</button>
+        </form>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 }

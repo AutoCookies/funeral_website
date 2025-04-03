@@ -5,6 +5,7 @@ using DietDoHongTran.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Cấu hình DbContext và Identity
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -21,7 +22,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 });
 
 builder.Services.AddRazorPages();
-// Đặt trước AddControllersWithViews();
+
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
@@ -29,6 +30,17 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
+
+
+// Cấu hình CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLocalhost",
+        builder => builder.WithOrigins("http://localhost:5131")  // Cấu hình localhost
+            .AllowAnyHeader()
+            .AllowAnyMethod());
+});
+
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IProductRepository, EFProductRepository>();
@@ -36,6 +48,9 @@ builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
 builder.Services.AddScoped<IServiceRepository, EFServiceRepository>();
 
 var app = builder.Build();
+
+// Áp dụng CORS vào Middleware Pipeline
+app.UseCors("AllowLocalhost");  // Áp dụng chính sách CORS cho tất cả các yêu cầu
 
 app.UseSession();
 
@@ -50,10 +65,8 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-app.UseRouting();
-
-// Thêm Middleware Session (Quan trọng!)
 app.UseSession();
+app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
@@ -65,7 +78,7 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}"
+    pattern: "{controller=Product}/{action=Index}/{id?}"
 );
 
 app.MapControllerRoute(

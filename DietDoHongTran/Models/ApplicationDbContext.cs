@@ -14,8 +14,9 @@ namespace DietDoHongTran.Models
         public DbSet<Service> Services { get; set; }
         public DbSet<ServiceProduct> ServiceProducts { get; set; } // Thêm DbSet bảng trung gian
         public DbSet<ShoppingCart> ShoppingCarts { get; set; }
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<Invoice> Invoices { get; set; }
+        public DbSet<InvoiceDetail> InvoiceDetails { get; set; }
+
         public DbSet<CartItem> CartItems { get; set; } // Thêm DbSet cho CartItem
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

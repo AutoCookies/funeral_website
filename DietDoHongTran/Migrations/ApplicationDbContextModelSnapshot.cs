@@ -141,7 +141,7 @@ namespace DietDoHongTran.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("DietDoHongTran.Models.Order", b =>
+            modelBuilder.Entity("DietDoHongTran.Models.Invoice", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -149,32 +149,41 @@ namespace DietDoHongTran.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Notes")
+                    b.Property<string>("ApplicationUserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("OrderDate")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsPaid")
+                        .HasColumnType("bit");
 
                     b.Property<string>("ShippingAddress")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("TotalPrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("UserId")
+                    b.Property<string>("ShippingCity")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ShippingCountry")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ShippingPostalCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("TotalAmount")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Orders");
+                    b.ToTable("Invoices");
                 });
 
-            modelBuilder.Entity("DietDoHongTran.Models.OrderDetail", b =>
+            modelBuilder.Entity("DietDoHongTran.Models.InvoiceDetail", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -182,7 +191,7 @@ namespace DietDoHongTran.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("OrderId")
+                    b.Property<int>("InvoiceId")
                         .HasColumnType("int");
 
                     b.Property<decimal>("Price")
@@ -196,11 +205,9 @@ namespace DietDoHongTran.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OrderId");
+                    b.HasIndex("InvoiceId");
 
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("OrderDetails");
+                    b.ToTable("InvoiceDetails");
                 });
 
             modelBuilder.Entity("DietDoHongTran.Models.Product", b =>
@@ -476,34 +483,15 @@ namespace DietDoHongTran.Migrations
                     b.Navigation("ShoppingCart");
                 });
 
-            modelBuilder.Entity("DietDoHongTran.Models.Order", b =>
+            modelBuilder.Entity("DietDoHongTran.Models.InvoiceDetail", b =>
                 {
-                    b.HasOne("DietDoHongTran.Models.ApplicationUser", "ApplicationUser")
-                        .WithMany()
-                        .HasForeignKey("UserId")
+                    b.HasOne("DietDoHongTran.Models.Invoice", "Invoice")
+                        .WithMany("InvoiceDetails")
+                        .HasForeignKey("InvoiceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("ApplicationUser");
-                });
-
-            modelBuilder.Entity("DietDoHongTran.Models.OrderDetail", b =>
-                {
-                    b.HasOne("DietDoHongTran.Models.Order", "Order")
-                        .WithMany("OrderDetails")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("DietDoHongTran.Models.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Order");
-
-                    b.Navigation("Product");
+                    b.Navigation("Invoice");
                 });
 
             modelBuilder.Entity("DietDoHongTran.Models.Product", b =>
@@ -619,9 +607,9 @@ namespace DietDoHongTran.Migrations
                     b.Navigation("Products");
                 });
 
-            modelBuilder.Entity("DietDoHongTran.Models.Order", b =>
+            modelBuilder.Entity("DietDoHongTran.Models.Invoice", b =>
                 {
-                    b.Navigation("OrderDetails");
+                    b.Navigation("InvoiceDetails");
                 });
 
             modelBuilder.Entity("DietDoHongTran.Models.Product", b =>

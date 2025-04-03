@@ -75,11 +75,14 @@ wwwroot\images\0dfb704c-0469-4471-890e-459cae43b769_z6436211968991_64b555da9c7ee
 wwwroot\images\16639fad-52b8-48ae-afef-420c2ba13425_quantai.jpg
 wwwroot\images\47c230d4-9bc6-49da-962f-f0ca1c675efb_qtkl1.jpg
 wwwroot\images\4a311dbb-6bbb-4539-be8d-a587b1d19322_quan-tai-go-trai-phat-giao-4.jpg
+wwwroot\images\55e9137d-1a7c-4655-8365-c3f5dc6a2e1c_quan-tai-go-trai-phat-giao-4.jpg
 wwwroot\images\8baf66d6-4c36-420f-ae05-bc9b4839603c_qtve1.jpg
 wwwroot\images\8e595a56-5d58-4da6-ace2-9a0be820adfb_quan-tai-go-trai-phat-giao-4.jpg
 wwwroot\images\8ea6d048-f5f4-4f6c-8f7d-24bf01f2496c_quan-tai-go-trai-phat-giao-4.jpg
 wwwroot\images\927bb290-3bb4-4290-ad0d-bf5f69a5a92d_quantai.jpg
 wwwroot\images\a3375c4a-8f9a-4d56-aad4-46e0cf510815_quan-tai-go-trai-phat-giao-4.jpg
+wwwroot\images\a787c4b4-bb46-427e-8d6b-018d7ebddb6d_z6417703215246_5480201f8dd27a5809372a8467d47541.jpg
+wwwroot\images\af899f2c-8e58-4c4b-8687-e0e770ccda7c_quan-tai-go-trai-phat-giao-4.jpg
 wwwroot\images\d1e4d5a3-2f92-4b8a-a5d4-d31c8d82532a_cac-loai-quan-tai-3-1024x576.jpg
 wwwroot\images\d206da17-9aa3-4a18-8906-49803bf9c8dd_quantai.jpg
 wwwroot\images\de1862d4-3f60-4de5-8763-9d51decd2b68_admin_1366163367.png
