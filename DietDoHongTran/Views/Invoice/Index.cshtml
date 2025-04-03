@@ -1,0 +1,30 @@
+﻿<h2>Danh sách Hóa Đơn của bạn</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Mã Hóa Đơn</th>
+            <th>Ngày Đặt</th>
+            <th>Sản Phẩm</th>
+            <th>Số Lượng</th>
+            <th>Đơn Giá</th>
+            <th>Tổng Tiền</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var invoice in Model)
+        {
+            <tr>
+                <td rowspan="@invoice.InvoiceDetails.Count">@invoice.Id</td> <!-- Hiển thị mã hóa đơn cho tất cả các sản phẩm của hóa đơn -->
+                <td rowspan="@invoice.InvoiceDetails.Count">@invoice.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td> <!-- Hiển thị ngày đặt cho tất cả các sản phẩm của hóa đơn -->
+                @foreach (var detail in invoice.InvoiceDetails)
+                {
+                    <td>@ViewBag.ProductNames[detail.ProductId]</td>  <!-- Lấy tên sản phẩm từ ViewBag -->
+                    <td>@detail.Quantity</td>
+                    <td>@string.Format("{0:0,0} VNĐ", detail.Price)</td>
+                    <td>@string.Format("{0:0,0} VNĐ", detail.Price * detail.Quantity)</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

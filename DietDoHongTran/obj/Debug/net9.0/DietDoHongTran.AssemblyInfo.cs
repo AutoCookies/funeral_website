@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DietDoHongTran")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cf0d678d897fea3886ab7e9c061a426187752dd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4fa22ee93f1ccd875f0148c2e1e288ae8d652bc3")]
 [assembly: System.Reflection.AssemblyProductAttribute("DietDoHongTran")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DietDoHongTran")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

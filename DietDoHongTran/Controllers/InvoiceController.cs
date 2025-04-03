@@ -143,5 +143,41 @@ namespace DietDoHongTran.Controllers
         {
             return View(); // Bạn có thể tạo trang cảm ơn ở đây
         }
+
+        public async Task<IActionResult> Index()
+        {
+            var userId = _userManager.GetUserId(User);
+
+            // Lấy danh sách hóa đơn của user
+            var invoices = await _context.Invoices
+                .Where(i => i.ApplicationUserId == userId)
+                .Include(i => i.InvoiceDetails)  // Bao gồm chi tiết hóa đơn
+                .OrderByDescending(i => i.CreatedAt)
+                .ToListAsync();
+
+            if (!invoices.Any())
+            {
+                TempData["ErrorMessage"] = "Bạn chưa có hóa đơn nào!";
+            }
+
+            // Lấy danh sách ProductId từ InvoiceDetails
+            var productIds = invoices.SelectMany(i => i.InvoiceDetails)
+                .Select(d => d.ProductId)
+                .Distinct()
+                .ToList();
+
+            // Lấy thông tin sản phẩm từ ProductId
+            var products = await _context.Products
+                .Where(p => productIds.Contains(p.Id))
+                .ToListAsync();
+
+            // Tạo dictionary ánh xạ ProductId -> ProductName
+            var productNames = products.ToDictionary(p => p.Id, p => p.Name);
+
+            // Gán sản phẩm vào ViewBag để truy cập trong View
+            ViewBag.ProductNames = productNames;
+
+            return View(invoices);  // Trả về danh sách hóa đơn
+        }
     }
 }
