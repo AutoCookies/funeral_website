@@ -1,0 +1,111 @@
+﻿@model IEnumerable<DietDoHongTran.Models.Product>
+
+@{
+    ViewData["Title"] = "Products";
+
+    // Lấy 3 sản phẩm có Sold cao nhất, nếu có nhiều sản phẩm Sold bằng nhau, lấy 3 sản phẩm đầu tiên
+    var topSoldProducts = Model
+        .OrderByDescending(p => p.Sold)
+        .ThenBy(p => p.Id)
+        .Take(3)
+        .ToList();
+}
+
+<div class="container mt-5">
+    <!-- Section Best Seller Carousel -->
+    <h2 class="text-center text-danger fw-bold mb-4">Best Selling Products</h2>
+
+    @if (topSoldProducts.Any())
+    {
+        <div id="bestSellerCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                @for (int i = 0; i < topSoldProducts.Count; i++)
+                {
+                    var product = topSoldProducts[i];
+                    <div class="carousel-item @(i == 0 ? "active" : "")">
+                        <img src="@product.ImageUrl" class="d-block w-100 best-seller-img" alt="@product.Name">
+                        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center best-seller-overlay">
+                            <h4 class="fw-bold text-light bg-dark px-3 py-1 rounded">@product.Name</h4>
+                            <p class="text-warning bg-dark px-3 py-1 rounded">@string.Format("{0:0.00} VNĐ", product.Price)</p>
+                            <a href="@Url.Action("Display", "Product", new { id = product.Id })" class="btn btn-light fw-bold">View Details</a>
+                        </div>
+                    </div>
+                }
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bestSellerCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bestSellerCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    }
+
+    <!-- Section All Products -->
+    <h2 class="text-center text-primary fw-bold">Our Products</h2>
+    <div class="row mt-4">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4 product-card">
+                    <div class="position-relative">
+                        <img class="card-img-top product-image" src="@(!string.IsNullOrEmpty(product.ImageUrl) ? product.ImageUrl : "/images/default-image.jpg")" alt="@product.Name" />
+                        @if (topSoldProducts.Contains(product))
+                        {
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-1">Best Seller</span>
+                        }
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">@product.Name</h5>
+                        <p class="card-text">@product.Description</p>
+                        <p class="card-text">
+                            <strong>💰 Price:</strong> <span class="text-success">@string.Format("{0:0.00} VNĐ", product.Price)</span>
+                        </p>
+                        <p class="card-text"><strong>In Stock:</strong> @product.Instock</p>
+                        <a href="@Url.Action("Display", "Product", new { id = product.Id, returnUrl = ViewBag.ReturnUrl })">
+                            Xem Chi Tiết
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- CSS -->
+<style>
+    .best-seller-img {
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .best-seller-overlay {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .product-card {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+    .product-image {
+        height: 250px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+</style>

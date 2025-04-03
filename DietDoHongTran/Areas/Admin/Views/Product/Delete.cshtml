@@ -1,0 +1,59 @@
+﻿@model DietDoHongTran.Models.Product
+
+@{
+    ViewData["Title"] = "Xóa sản phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-lg border-0" style="background-color: #f8f9fa; border-radius: 10px;">
+        <div class="card-header text-center bg-danger text-white">
+            <h2 class="m-0">Xác nhận xóa sản phẩm</h2>
+        </div>
+
+        <div class="card-body">
+            <div class="row">
+                
+                <div class="col-md-4 text-center">
+                    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                    {
+                        <img src="@Model.ImageUrl" alt="@Model.Name" class="img-fluid rounded" style="max-height: 250px; border: 1px solid #ddd;">
+                    }
+                    else
+                    {
+                        <img src="/images/no-image.jpg" alt="No Image" class="img-fluid rounded" style="max-height: 250px; border: 1px solid #ddd;">
+                    }
+                </div>
+
+                
+                <div class="col-md-8">
+                    <dl class="row">
+                        <dt class="col-sm-4 text-muted">Tên sản phẩm</dt>
+                        <dd class="col-sm-8 font-weight-bold">@Model.Name</dd>
+
+                        <dt class="col-sm-4 text-muted">Giá</dt>
+                        <dd class="col-sm-8 font-italic">@Model.Price.ToString("N0") VND</dd>
+
+                        <dt class="col-sm-4 text-muted">Mô tả</dt>
+                        <dd class="col-sm-8">@Model.Description</dd>
+
+                        <dt class="col-sm-4 text-muted">Danh mục</dt>
+                        <dd class="col-sm-8">@Model.Category?.Name</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer text-center">
+            <form asp-area="Admin" asp-controller="Product" asp-action="DeleteConfirmed" method="post" onsubmit="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này không?');">
+                <input type="hidden" asp-for="Id" />
+                <button type="submit" class="btn btn-danger">
+                    <i class="fas fa-trash"></i> Xóa
+                </button>
+                <a asp-area="Admin" asp-controller="Product" asp-action="Index" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Quay lại danh sách
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

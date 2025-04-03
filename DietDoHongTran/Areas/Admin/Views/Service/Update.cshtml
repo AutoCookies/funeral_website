@@ -1,0 +1,55 @@
+﻿@model DietDoHongTran.Models.Service
+
+@{
+    ViewData["Title"] = "Update Service";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-primary">✏️ Update Service</h1>
+<hr />
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-lg p-4">
+            <h4 class="text-center text-secondary">🛠️ Service Details</h4>
+            <hr />
+            <form asp-action="Update">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                <input type="hidden" asp-for="Id" />
+
+                <!-- Service Name -->
+                <div class="form-group mb-3">
+                    <label asp-for="Name" class="form-label fw-bold">📌 Service Name</label>
+                    <input asp-for="Name" class="form-control" placeholder="Enter service name..." />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <!-- Description -->
+                <div class="form-group mb-3">
+                    <label asp-for="Description" class="form-label fw-bold">📝 Description</label>
+                    <textarea asp-for="Description" class="form-control" rows="3" placeholder="Enter service description..."></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <!-- Base Price -->
+                <div class="form-group mb-3">
+                    <label asp-for="BasePrice" class="form-label fw-bold">💰 Base Price</label>
+                    <input asp-for="BasePrice" type="number" class="form-control" placeholder="Enter base price..." />
+                    <span asp-validation-for="BasePrice" class="text-danger"></span>
+                </div>
+
+                <!-- Buttons -->
+                <div class="d-flex justify-content-between mt-4">
+                    <a asp-action="Index" class="btn btn-secondary">🔙 Back to List</a>
+                    <button type="submit" class="btn btn-primary">💾 Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

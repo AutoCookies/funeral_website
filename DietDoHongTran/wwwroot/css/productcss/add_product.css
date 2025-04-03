@@ -1,0 +1,35 @@
+﻿body {
+    background-color: #f8f9fa;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.input-group-text {
+    background-color: #343a40;
+    color: white;
+}
+
+.form-control:focus {
+    border-color: #343a40;
+    box-shadow: none;
+}
+
+.btn-dark {
+    background-color: #232323;
+    border: none;
+    transition: 0.3s;
+}
+
+    .btn-dark:hover {
+        background-color: #3c3c3c;
+    }
+
+.img-thumbnail {
+    border: 2px solid #343a40;
+}

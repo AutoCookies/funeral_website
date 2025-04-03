@@ -1,0 +1,75 @@
+﻿@model DietDoHongTran.Models.Product
+
+@{
+    ViewData["Title"] = "Add Product";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-primary">➕ Add Product</h1>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card shadow-lg p-4">
+            <form asp-action="Add" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                <!-- Product Name -->
+                <div class="form-group mb-3">
+                    <label asp-for="Name" class="form-label fw-bold">Product Name</label>
+                    <input asp-for="Name" class="form-control" placeholder="Enter product name..." />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <!-- Price -->
+                <div class="form-group mb-3">
+                    <label asp-for="Price" class="form-label fw-bold">Price</label>
+                    <input asp-for="Price" class="form-control" type="number" placeholder="Enter price..." />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+
+                <!-- Description -->
+                <div class="form-group mb-3">
+                    <label asp-for="Description" class="form-label fw-bold">Description</label>
+                    <textarea asp-for="Description" class="form-control" rows="3" placeholder="Enter product description..."></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <!-- Image Upload -->
+                <div class="form-group mb-3">
+                    <label asp-for="ImageUrl" class="form-label fw-bold">🖼Upload Image</label>
+                    <input type="file" name="imageFile" class="form-control" accept="image/*" />
+                    <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                </div>
+
+                <!-- Category -->
+                <div class="form-group mb-3">
+                    <label asp-for="CategoryId" class="form-label fw-bold">Category</label>
+                    <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.Categories">
+                        <option selected>-- Select a category --</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <!-- In Stock -->
+                    <div class="col-md-6 form-group mb-3">
+                        <label asp-for="Instock" class="form-label fw-bold">In Stock</label>
+                        <input asp-for="Instock" class="form-control" type="number" placeholder="Enter stock quantity..." />
+                        <span asp-validation-for="Instock" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-4">
+                    <a asp-action="Index" class="btn btn-secondary">🔙 Back to List</a>
+                    <button type="submit" class="btn btn-primary">✅ Create Product</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
