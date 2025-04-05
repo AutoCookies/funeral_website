@@ -1,21 +1,76 @@
 ﻿/* Cấu trúc tổng thể */
 body {
-    background-color: #f4f4f4;
+    background-color: #f0f8ff; /* Màu trắng xanh nhạt (AliceBlue) */
     color: #333;
     font-family: "Times New Roman", serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
 }
 
+/* Vùng chứa sao */
+.background-stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Từng ngôi sao */
+.star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #4682b4; /* Màu xanh thép (SteelBlue) */
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: twinkle 3s infinite ease-in-out alternate;
+}
+
+/* Hiệu ứng lấp lánh */
+@keyframes twinkle {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+}
 /* Header */
 header {
-    background-color: #2c3e50;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    position: relative;
+   
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
+    header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(241, 196, 15, 0.5); /* Màu vàng với độ mờ */
+        z-index: -1; /* Đặt phía dưới nội dung header */
+        filter: blur(3px); /* Mờ nền */
+    }
+
 
 .navbar-dark .navbar-nav .nav-link {
     color: #ecf0f1;
@@ -70,7 +125,7 @@ footer {
     footer h3 {
         color: #ecf0f1;
     }
-
+        
 .footer-icons a {
     color: #bdc3c7;
     font-size: 1.5rem;

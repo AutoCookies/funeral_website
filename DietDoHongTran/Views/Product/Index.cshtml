@@ -24,7 +24,10 @@
                         <div class="carousel-content">
                             <h5 class="carousel-title">@product.value.Name</h5>
                             <p class="carousel-description">@product.value.Description</p>
-                            <a href="@Url.Action("Display", "Product", new { id = product.value.Id })" class="btn btn-primary carousel-btn">Xem Chi Tiết</a>
+                            <a href="@Url.Action("Display", "Product", new { id = product.value.Id })"
+                               class="btn btn-outline-primary carousel-btn custom-carousel-btn">
+                                Xem Chi Tiết
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -55,7 +58,7 @@
                             <p class="card-text">
                                 <strong>💰 Price:</strong> <span class="text-danger">@string.Format("{0:0.00} VNĐ", product.Price)</span>
                             </p>
-                            <p class="card-text"><strong>In Stock:</strong> @product.Instock</p>
+                            <p class="card-text"><strong>Số lượng:</strong> @product.Instock</p>
                         </div>
                     </div>
                 </a>
@@ -90,11 +93,15 @@
                                 <p class="card-text">
                                     <strong>💰 Price:</strong> <span class="text-danger">@string.Format("{0:0.00} VNĐ", product.Price)</span>
                                 </p>
-                                <p class="card-text"><strong>In Stock:</strong> @product.Instock</p>
-                                <a asp-controller="ShoppingCart" asp-action="AddToCart"
-                                   asp-route-productId="@product.Id" asp-route-quantity="@numOfQuantity">
-                                    <i class="fas fa-shopping-cart"></i> Add to Cart
-                                </a>
+                                <p class="card-text"><strong>Số lượng:</strong> @product.Instock</p>
+                                <div style="text-align: center; margin-top: 15px;">
+                                    <!-- Căn giữa và thêm khoảng cách -->
+                                    <a asp-controller="ShoppingCart" asp-action="AddToCart"
+                                       asp-route-productId="@product.Id" asp-route-quantity="@numOfQuantity"
+                                       style="display: inline-block; padding: 8px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 4px;">
+                                        <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -328,6 +335,45 @@
         .product-carousel-img {
             height: 300px;
         }
+    }
+    /* nút thêm sp */
+    .button-container {
+       
+        margin-left: 20px 0; /* Thêm khoảng cách nếu cần */
+    }
+
+    .custom-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff; /* Màu nền */
+        color: white !important;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+
+    .custom-button:hover {
+        background-color: #0069d9; /* Màu hover */
+        opacity: 0.9; /* Làm nhạt màu */
+        transform: translateY(-1px); /* Hiệu ứng nổi nhẹ */
+    }
+    @* nút chi tiêt trên trang chuyển *@
+    .custom-carousel-btn {
+        background-color: white !important; /* Nền trắng */
+        color: #007bff !important; /* Chữ màu xanh */
+        border: 2px solid #007bff !important; /* Viền xanh đậm hơn */
+        transition: all 0.3s ease; /* Hiệu ứng mượt */
+    }
+
+    .custom-carousel-btn:hover {
+        background-color: #f8f9fa !important; /* Màu xám nhạt khi hover */
+        color: #0056b3 !important; /* Chữ đậm hơn khi hover */
+        border-color: #0056b3 !important; /* Viền đậm hơn khi hover */
+        transform: translateY(-1px); /* Hiệu ứng nổi nhẹ */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Đổ bóng nhẹ */
     }
 </style>
 

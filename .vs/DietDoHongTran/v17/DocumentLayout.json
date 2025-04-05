@@ -1,50 +1,160 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Github Projects\\funeral_website\\",
+  "WorkspaceRootPath": "E:\\dowload linh tinhh\\\u0110\u1ED3 \u00C1n Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\funeral_website\\dietdohongtran\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\dowload linh tinhh\\\u0111\u1ED3 \u00E1n web\\dietdohongtran\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\dowload linh tinhh\\\u0111\u1ED3 \u00E1n web\\dietdohongtran\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\funeral_website\\dietdohongtran\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\dowload linh tinhh\\\u0111\u1ED3 \u00E1n web\\dietdohongtran\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\dowload linh tinhh\\\u0111\u1ED3 \u00E1n web\\dietdohongtran\\views\\product\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\views\\product\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\dowload linh tinhh\\\u0111\u1ED3 \u00E1n web\\dietdohongtran\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\dowload linh tinhh\\\u0111\u1ED3 \u00E1n web\\dietdohongtran\\views\\invoice\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\views\\invoice\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\dowload linh tinhh\\\u0111\u1ED3 \u00E1n web\\dietdohongtran\\views\\invoice\\invoicedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\views\\invoice\\invoicedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\dowload linh tinhh\\\u0111\u1ED3 \u00E1n web\\dietdohongtran\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 7,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 226,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InvoiceDetails.cshtml",
+              "DocumentMoniker": "E:\\dowload linh tinhh\\\u0110\u1ED3 \u00C1n Web\\DietDoHongTran\\Views\\Invoice\\InvoiceDetails.cshtml",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Views\\Invoice\\InvoiceDetails.cshtml",
+              "ToolTip": "E:\\dowload linh tinhh\\\u0110\u1ED3 \u00C1n Web\\DietDoHongTran\\Views\\Invoice\\InvoiceDetails.cshtml",
+              "RelativeToolTip": "DietDoHongTran\\Views\\Invoice\\InvoiceDetails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T03:27:43.591Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InvoiceController.cs",
-              "DocumentMoniker": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Controllers\\InvoiceController.cs",
-              "RelativeDocumentMoniker": "DietDoHongTran\\Controllers\\InvoiceController.cs",
-              "ToolTip": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Controllers\\InvoiceController.cs",
-              "RelativeToolTip": "DietDoHongTran\\Controllers\\InvoiceController.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAIwJgAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T18:30:08.753Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\dowload linh tinhh\\\u0110\u1ED3 \u00C1n Web\\DietDoHongTran\\Views\\ShoppingCart\\Index.cshtml",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Views\\ShoppingCart\\Index.cshtml",
+              "ToolTip": "E:\\dowload linh tinhh\\\u0110\u1ED3 \u00C1n Web\\DietDoHongTran\\Views\\ShoppingCart\\Index.cshtml",
+              "RelativeToolTip": "DietDoHongTran\\Views\\ShoppingCart\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T03:07:49.96Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\dowload linh tinhh\\\u0110\u1ED3 \u00C1n Web\\DietDoHongTran\\Views\\Invoice\\Index.cshtml",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Views\\Invoice\\Index.cshtml",
+              "ToolTip": "E:\\dowload linh tinhh\\\u0110\u1ED3 \u00C1n Web\\DietDoHongTran\\Views\\Invoice\\Index.cshtml",
+              "RelativeToolTip": "DietDoHongTran\\Views\\Invoice\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T02:41:01.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\dowload linh tinhh\\\u0110\u1ED3 \u00C1n Web\\DietDoHongTran\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Views\\Product\\Index.cshtml",
+              "ToolTip": "E:\\dowload linh tinhh\\\u0110\u1ED3 \u00C1n Web\\DietDoHongTran\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "DietDoHongTran\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAACYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T02:16:35.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Display.cshtml",
+              "DocumentMoniker": "E:\\dowload linh tinhh\\\u0110\u1ED3 \u00C1n Web\\DietDoHongTran\\Views\\Product\\Display.cshtml",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Views\\Product\\Display.cshtml",
+              "ToolTip": "E:\\dowload linh tinhh\\\u0110\u1ED3 \u00C1n Web\\DietDoHongTran\\Views\\Product\\Display.cshtml",
+              "RelativeToolTip": "DietDoHongTran\\Views\\Product\\Display.cshtml",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAADMAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T17:25:46.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\dowload linh tinhh\\\u0110\u1ED3 \u00C1n Web\\DietDoHongTran\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\dowload linh tinhh\\\u0110\u1ED3 \u00C1n Web\\DietDoHongTran\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DietDoHongTran\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwCYAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T14:14:23.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "style.css",
+              "DocumentMoniker": "E:\\dowload linh tinhh\\\u0110\u1ED3 \u00C1n Web\\DietDoHongTran\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "DietDoHongTran\\wwwroot\\css\\style.css",
+              "ToolTip": "E:\\dowload linh tinhh\\\u0110\u1ED3 \u00C1n Web\\DietDoHongTran\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "DietDoHongTran\\wwwroot\\css\\style.css",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAC4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-04T14:29:20.417Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 174,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Views\\ShoppingCart\\Index.cshtml",
-              "RelativeDocumentMoniker": "DietDoHongTran\\Views\\ShoppingCart\\Index.cshtml",
-              "ToolTip": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Views\\ShoppingCart\\Index.cshtml",
-              "RelativeToolTip": "DietDoHongTran\\Views\\ShoppingCart\\Index.cshtml",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAAwE4AAAAYAAAAAAAAAA==",
+              "DocumentMoniker": "E:\\dowload linh tinhh\\\u0110\u1ED3 \u00C1n Web\\DietDoHongTran\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\dowload linh tinhh\\\u0110\u1ED3 \u00C1n Web\\DietDoHongTran\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "DietDoHongTran\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T18:22:28.964Z",
+              "WhenOpened": "2025-04-05T13:57:07.661Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }
