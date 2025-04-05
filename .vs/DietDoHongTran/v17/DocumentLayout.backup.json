@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Github Projects\\funeral_website\\",
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\funeral_website\\dietdohongtran\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|c:\\users\\admin\\onedrive\\documents\\github\\funeral_website\\dietdohongtran\\areas\\admin\\views\\admininvoice\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\areas\\admin\\views\\admininvoice\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\funeral_website\\dietdohongtran\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|c:\\users\\admin\\onedrive\\documents\\github\\funeral_website\\dietdohongtran\\views\\invoice\\invoicedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\views\\invoice\\invoicedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InvoiceController.cs",
-              "DocumentMoniker": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Controllers\\InvoiceController.cs",
-              "RelativeDocumentMoniker": "DietDoHongTran\\Controllers\\InvoiceController.cs",
-              "ToolTip": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Controllers\\InvoiceController.cs",
-              "RelativeToolTip": "DietDoHongTran\\Controllers\\InvoiceController.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAIwJgAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T18:30:08.753Z",
+              "Title": "InvoiceDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\Views\\Invoice\\InvoiceDetails.cshtml",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Views\\Invoice\\InvoiceDetails.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\Views\\Invoice\\InvoiceDetails.cshtml",
+              "RelativeToolTip": "DietDoHongTran\\Views\\Invoice\\InvoiceDetails.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwBsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T03:10:52.455Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Views\\ShoppingCart\\Index.cshtml",
-              "RelativeDocumentMoniker": "DietDoHongTran\\Views\\ShoppingCart\\Index.cshtml",
-              "ToolTip": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Views\\ShoppingCart\\Index.cshtml",
-              "RelativeToolTip": "DietDoHongTran\\Views\\ShoppingCart\\Index.cshtml",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAAwE4AAAAYAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\Areas\\Admin\\Views\\AdminInvoice\\Index.cshtml",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Areas\\Admin\\Views\\AdminInvoice\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\funeral_website\\DietDoHongTran\\Areas\\Admin\\Views\\AdminInvoice\\Index.cshtml*",
+              "RelativeToolTip": "DietDoHongTran\\Areas\\Admin\\Views\\AdminInvoice\\Index.cshtml*",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T18:22:28.964Z",
+              "WhenOpened": "2025-04-05T03:10:13.296Z",
               "EditorCaption": ""
             }
           ]

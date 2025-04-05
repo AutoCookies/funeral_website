@@ -13,8 +13,8 @@
         <tr>
             <th>Sản phẩm</th>
             <th>Số lượng</th>
-            <th>Giá</th>
-            <th>Tổng</th>
+            <th>Đơn giá</th>
+            <th>Tổng tiền sản phẩm</th>
         </tr>
     </thead>
     <tbody>
@@ -30,6 +30,6 @@
     </tbody>
 </table>
 
-<h3><strong>Tổng cộng: </strong>@string.Format("{0:0,0} VNĐ", Model.TotalAmount)</h3>
+<h3><strong>Tổng cộng: </strong>@string.Format("{0:0,0} VNĐ", Model.TotalAmount + 256000)</h3>
 
 <a asp-controller="Product" asp-action="Index" class="btn btn-primary">🏠 Về trang chủ</a>

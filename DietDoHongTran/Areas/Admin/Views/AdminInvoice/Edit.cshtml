@@ -1,0 +1,49 @@
+﻿@model DietDoHongTran.Models.Invoice
+
+<h2>📝 Chỉnh sửa hóa đơn</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="ApplicationUserId" />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+    <div class="form-group">
+        <label asp-for="ShippingAddress"></label>
+        <input asp-for="ShippingAddress" class="form-control" />
+        <span asp-validation-for="ShippingAddress" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ShippingCity"></label>
+        <input asp-for="ShippingCity" class="form-control" />
+        <span asp-validation-for="ShippingCity" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ShippingPostalCode"></label>
+        <input asp-for="ShippingPostalCode" class="form-control" />
+        <span asp-validation-for="ShippingPostalCode" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ShippingCountry"></label>
+        <input asp-for="ShippingCountry" class="form-control" />
+        <span asp-validation-for="ShippingCountry" class="text-danger"></span>
+    </div>
+
+    <div class="form-group form-check">
+        <label class="form-check-label">
+            <input class="form-check-input" asp-for="IsPaid" /> @Html.DisplayNameFor(model => model.IsPaid)
+        </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

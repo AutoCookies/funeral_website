@@ -1,0 +1,40 @@
+﻿@model List<DietDoHongTran.Models.Invoice>
+
+<h2 class="mb-4">📦 Danh sách hóa đơn</h2>
+
+<table class="table table-bordered table-hover table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Mã HD</th>
+            <th>Người dùng</th>
+            <th>Ngày tạo</th>
+            <th>Địa chỉ giao hàng</th>
+            <th>Tổng tiền</th>
+            <th>Trạng thái</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var invoice in Model)
+        {
+            <tr>
+                <td>@invoice.Id</td>
+                <td>@invoice.ApplicationUserId</td>
+                <td>@invoice.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>@invoice.ShippingAddress, @invoice.ShippingCity, @invoice.ShippingCountry</td>
+                <td>@string.Format("{0:0,0} VNĐ", invoice.TotalAmount + 256000)</td>
+                <td>
+                    @Html.Raw(invoice.IsPaid
+                             ? "<span class='text-success font-weight-bold'>✅ Đã thanh toán</span>"
+                             : "<span class='text-danger font-weight-bold'>❌ Chưa thanh toán</span>")
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@invoice.Id" class="btn btn-sm btn-info">🔍 Chi tiết</a>
+                    <a asp-action="Edit" asp-route-id="@invoice.Id" class="btn btn-sm btn-warning">✏️ Sửa</a>
+                    <a asp-action="Delete" asp-route-id="@invoice.Id" class="btn btn-sm btn-danger"
+                       onclick="return confirm('Bạn có chắc chắn muốn xóa hóa đơn này?');">🗑️ Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
