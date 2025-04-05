@@ -3,7 +3,6 @@
 <table class="table table-striped">
     <thead>
         <tr>
-            <th>Mã Hóa Đơn</th>
             <th>Ngày Đặt</th>
             <th>Sản Phẩm</th>
             <th>Số Lượng</th>
@@ -15,7 +14,6 @@
         @foreach (var invoice in Model)
         {
             <tr>
-                <td rowspan="@invoice.InvoiceDetails.Count">@invoice.Id</td> <!-- Hiển thị mã hóa đơn cho tất cả các sản phẩm của hóa đơn -->
                 <td rowspan="@invoice.InvoiceDetails.Count">@invoice.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td> <!-- Hiển thị ngày đặt cho tất cả các sản phẩm của hóa đơn -->
                 @foreach (var detail in invoice.InvoiceDetails)
                 {
