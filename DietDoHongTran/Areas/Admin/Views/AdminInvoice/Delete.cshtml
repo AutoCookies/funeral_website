@@ -1,0 +1,17 @@
+﻿@model DietDoHongTran.Models.Invoice
+
+<h2>❌ Xác nhận xóa hóa đơn</h2>
+
+<p>Bạn có chắc chắn muốn xóa hóa đơn này không?</p>
+
+<ul>
+    <li><strong>Mã hóa đơn:</strong> @Model.Id</li>
+    <li><strong>Địa chỉ giao hàng:</strong> @Model.ShippingAddress</li>
+    <li><strong>Ngày tạo:</strong> @Model.CreatedAt.ToString("dd/MM/yyyy")</li>
+</ul>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Xác nhận xóa</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>
