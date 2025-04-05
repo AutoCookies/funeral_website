@@ -79,22 +79,34 @@ namespace DietDoHongTran.Controllers
 
         // 📌 Cập nhật số lượng sản phẩm trong giỏ hàng
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> UpdateCartItem(int cartItemId, int quantity)
         {
-            var cartItem = await _context.CartItems.FindAsync(cartItemId);
-            if (cartItem == null) return NotFound();
+            var cartItem = await _context.CartItems
+                .Include(ci => ci.Product)
+                .FirstOrDefaultAsync(ci => ci.Id == cartItemId);
 
-            if (quantity <= 0)
+            if (cartItem == null)
             {
-                _context.CartItems.Remove(cartItem);
-            }
-            else
-            {
-                cartItem.Quantity = quantity;
-                _context.CartItems.Update(cartItem);
+                return NotFound();
             }
 
+            if (cartItem.Product.Instock == 0)
+            {
+                TempData["ErrorMessage"] = "Sản phẩm đã hết hàng.";
+                return RedirectToAction("Index");
+            }
+
+            if (quantity > cartItem.Product.Instock)
+            {
+                TempData["ErrorMessage"] = $"Số lượng vượt quá tồn kho ({cartItem.Product.Instock}).";
+                return RedirectToAction("Index");
+            }
+
+            cartItem.Quantity = quantity;
+            _context.CartItems.Update(cartItem);
             await _context.SaveChangesAsync();
+
             return RedirectToAction("Index");
         }
 

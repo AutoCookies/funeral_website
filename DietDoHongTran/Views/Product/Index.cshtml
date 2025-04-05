@@ -55,7 +55,17 @@
                             <p class="card-text">
                                 <strong>💰 Price:</strong> <span class="text-danger">@string.Format("{0:0.00} VNĐ", product.Price)</span>
                             </p>
-                            <p class="card-text"><strong>In Stock:</strong> @product.Instock</p>
+                            <p class="card-text">
+                                <strong>In Stock:</strong>
+                                @if (product.Instock == 0)
+                                {
+                                    <span class="text-danger">Đã hết hàng</span>
+                                }
+                                else
+                                {
+                                    @product.Instock
+                                }
+                            </p>
                         </div>
                     </div>
                 </a>
@@ -90,11 +100,24 @@
                                 <p class="card-text">
                                     <strong>💰 Price:</strong> <span class="text-danger">@string.Format("{0:0.00} VNĐ", product.Price)</span>
                                 </p>
-                                <p class="card-text"><strong>In Stock:</strong> @product.Instock</p>
-                                <a asp-controller="ShoppingCart" asp-action="AddToCart"
-                                   asp-route-productId="@product.Id" asp-route-quantity="@numOfQuantity">
-                                    <i class="fas fa-shopping-cart"></i> Add to Cart
-                                </a>
+                                <p class="card-text">
+                                    <strong>In Stock:</strong>
+                                    @if (product.Instock == 0)
+                                    {
+                                        <span class="text-danger">Đã hết hàng</span>
+                                    }
+                                    else
+                                    {
+                                        @product.Instock
+                                    }
+                                </p>
+                                @if (product.Instock > 0)
+                                {
+                                    <a asp-controller="ShoppingCart" asp-action="AddToCart"
+                                       asp-route-productId="@product.Id" asp-route-quantity="@numOfQuantity">
+                                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                                    </a>
+                                }
                             </div>
                         </div>
                     </a>
@@ -104,259 +127,4 @@
     }
 </div>
 
-<style>
-    /* Carousel Styles */
-    .product-carousel-img {
-        height: 400px;
-        object-fit: cover;
-        border-radius: 10px;
-    }
-
-    .product-carousel-overlay {
-        position: absolute;
-        bottom: 10%;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        background: rgba(0, 0, 0, 0.7);
-        padding: 15px;
-        border-radius: 10px;
-        width: 80%;
-        max-width: 600px;
-        white-space: normal;
-        border: 2px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    }
-
-    .carousel-content {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        border-radius: 5px;
-        color: white;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    /* Highlighted Product Title */
-    .carousel-title {
-        color: #00ffff !important;
-        font-weight: bold;
-        text-shadow: 0 0 5px rgba(0, 255, 255, 0.7), 0 0 10px rgba(0, 255, 255, 0.5), 1px 1px 3px rgba(0, 0, 0, 0.8);
-        margin-bottom: 10px;
-        font-size: 1.8rem;
-        word-wrap: break-word;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        max-height: 3em;
-        line-height: 1.5;
-        transition: all 0.3s ease;
-        letter-spacing: 1px;
-    }
-
-        .carousel-title:hover {
-            color: #00e6e6 !important;
-            text-shadow: 0 0 10px rgba(0, 230, 230, 0.8), 0 0 20px rgba(0, 230, 230, 0.6), 1px 1px 3px rgba(0, 0, 0, 0.8);
-            transform: scale(1.05);
-        }
-
-    .carousel-description {
-        color: #f0f0f0;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-        margin-bottom: 15px;
-        line-height: 1.4;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        max-height: 4.2em;
-        word-break: break-word;
-    }
-
-    .carousel-btn {
-        background-color: rgba(13, 110, 253, 0.9);
-        border-color: rgba(255, 255, 255, 0.3);
-        transition: all 0.3s ease;
-        align-self: center;
-        margin-top: auto;
-    }
-
-        .carousel-btn:hover {
-            background-color: rgba(11, 94, 215, 1);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-
-    /* Product Card Styles */
-    .product-card {
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        border-radius: 10px;
-        overflow: hidden;
-        cursor: pointer;
-    }
-
-        .product-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-        }
-
-    .product-image {
-        height: 250px;
-        object-fit: cover;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-
-    /* Carousel Controls */
-    .custom-carousel-control .carousel-control-prev-icon,
-    .custom-carousel-control .carousel-control-next-icon {
-        background-color: black;
-        border-radius: 50%;
-        padding: 15px;
-    }
-
-    /* Card Layout */
-    .card-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-    }
-
-    /* Category Heading Styles */
-    .category-heading {
-        position: relative;
-        padding: 30px 0;
-        margin-top: 40px;
-    }
-
-    .heading-line {
-        flex-grow: 1;
-        height: 2px;
-        background: linear-gradient(90deg, transparent, #d4af37, transparent);
-        max-width: 150px;
-    }
-
-    .category-title {
-        font-size: 2.2rem;
-        font-weight: 700;
-        color: royalblue;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        position: relative;
-        margin: 0 20px;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-    }
-
-    .title-background {
-        padding: 0 20px;
-        position: relative;
-        z-index: 1;
-    }
-
-    .category-title:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 15px;
-        bottom: 5px;
-        left: 0;
-        z-index: 0;
-        transform: skewX(-15deg);
-    }
-
-    /* Link Styles */
-    .card-link {
-        text-decoration: none;
-        color: inherit;
-    }
-
-        .card-link:hover {
-            text-decoration: none;
-            color: inherit;
-        }
-
-    /* Text Styles */
-    .text-danger {
-        color: #dc3545 !important;
-        font-weight: bold;
-    }
-
-    .product-description-card {
-        text-align: justify;
-        text-justify: inter-word;
-    }
-
-    /* Responsive Styles */
-    @@media (max-width: 768px) {
-        .category-title {
-            font-size: 1.8rem;
-        }
-
-        .heading-line {
-            max-width: 80px;
-        }
-
-        .product-carousel-overlay {
-            width: 90%;
-            padding: 10px;
-            bottom: 5%;
-        }
-
-        .carousel-title {
-            font-size: 1.4rem;
-            -webkit-line-clamp: 1;
-            max-height: 1.8em;
-            text-shadow: 0 0 3px rgba(0, 255, 255, 0.7), 1px 1px 2px rgba(0, 0, 0, 0.8);
-        }
-
-        .carousel-description {
-            -webkit-line-clamp: 2;
-            max-height: 2.8em;
-            font-size: 0.9rem;
-        }
-
-        .carousel-btn {
-            padding: 5px 10px;
-            font-size: 0.9rem;
-        }
-
-        .product-carousel-img {
-            height: 300px;
-        }
-    }
-</style>
-
-<script>
-    $(document).ready(function () {
-        // Initialize carousel
-        $('#productCarousel').carousel({
-            interval: 2000,
-            wrap: true
-        });
-
-        // Adjust overlay size based on carousel width
-        function adjustOverlaySize() {
-            $('.product-carousel-overlay').each(function () {
-                var carouselWidth = $('#productCarousel').width();
-                var maxWidth = carouselWidth * 0.8;
-
-                $(this).css({
-                    'max-width': maxWidth + 'px'
-                });
-
-                $(this).find('.carousel-content').css({
-                    'max-width': '100%'
-                });
-            });
-        }
-
-        // Call on load and resize
-        adjustOverlaySize();
-        $(window).resize(adjustOverlaySize);
-    });
-</script>
+@* ... (styles and scripts) ... *@

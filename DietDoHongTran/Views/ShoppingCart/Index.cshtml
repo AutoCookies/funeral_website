@@ -37,12 +37,23 @@
                         <tr>
                             <td>@item.Product.Name</td>
                             <td>
-                                <form asp-controller="ShoppingCart" asp-action="UpdateCartItem" method="post" class="d-flex">
-                                    @Html.AntiForgeryToken()
-                                    <input type="hidden" name="cartItemId" value="@item.Id" />
-                                    <input type="number" name="quantity" value="@item.Quantity" min="1" class="form-control w-50 text-center" />
-                                    <button type="submit" class="btn btn-primary btn-sm ms-2">Cập nhật</button>
-                                </form>
+                                @if (item.Product.Instock == 0)
+                                {
+                                    <p class="text-danger">Đã hết hàng</p>
+                                }
+                                else
+                                {
+                                    <form asp-controller="ShoppingCart" asp-action="UpdateCartItem" method="post" class="d-flex">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="cartItemId" value="@item.Id" />
+                                        <input type="number" name="quantity" value="@item.Quantity" min="1" max="@item.Product.Instock" class="form-control w-50 text-center" />
+                                        <button type="submit" class="btn btn-primary btn-sm ms-2">Cập nhật</button>
+                                    </form>
+                                    @if (item.Quantity > item.Product.Instock)
+                                    {
+                                        <p class="text-danger">Số lượng vượt quá tồn kho (@item.Product.Instock).</p>
+                                    }
+                                }
                             </td>
                             <td>@string.Format("{0:0,0} VNĐ", item.Product.Price)</td>
                             <td>@string.Format("{0:0,0} VNĐ", item.Product.Price * item.Quantity)</td>
