@@ -1,35 +1,98 @@
 ﻿@model DietDoHongTran.Models.Invoice
 
-<h2>📜 Chi tiết hóa đơn</h2>
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
 
-<p><strong>Mã hóa đơn:</strong> @Model.Id</p>
-<p><strong>Người mua:</strong> @User.Identity.Name</p>
-<p><strong>Địa chỉ giao hàng:</strong> @Model.ShippingAddress, @Model.ShippingCity, @Model.ShippingCountry</p>
-<p><strong>Ngày đặt hàng:</strong> @Model.CreatedAt.ToString("dd/MM/yyyy HH:mm")</p>
+<h1>Details</h1>
 
-<h3>🛒 Sản phẩm</h3>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Sản phẩm</th>
-            <th>Số lượng</th>
-            <th>Đơn giá</th>
-            <th>Tổng tiền sản phẩm</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.InvoiceDetails)
-        {
+<div>
+    <h4>Invoice</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ApplicationUserId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ApplicationUserId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CreatedAt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CreatedAt)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalAmount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TotalAmount)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IsPaid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IsPaid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ShippingAddress)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ShippingAddress)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ShippingCity)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ShippingCity)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ShippingPostalCode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ShippingPostalCode)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ShippingCountry)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ShippingCountry)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <h4>Invoice Details</h4>
+    <hr />
+    <table class="table">
+        <thead>
             <tr>
-                <td>@(ViewBag.ProductNames.ContainsKey(item.ProductId) ? ViewBag.ProductNames[item.ProductId] : "Không xác định")</td>
-                <td>@item.Quantity</td>
-                <td>@string.Format("{0:0,0} VNĐ", item.Price)</td>
-                <td>@string.Format("{0:0,0} VNĐ", item.Quantity * item.Price)</td>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var detail in Model.InvoiceDetails)
+            {
+                <tr>
+                    <td>
+                        @ViewBag.ProductNames[detail.ProductId]
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => detail.Quantity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => detail.Price)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
 
-<h3><strong>Tổng cộng: </strong>@string.Format("{0:0,0} VNĐ", Model.TotalAmount + 256000)</h3>
-
-<a asp-controller="Product" asp-action="Index" class="btn btn-primary">🏠 Về trang chủ</a>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

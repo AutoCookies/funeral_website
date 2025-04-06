@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1JjItTXJOB0VbhChrAEt6gv/bghXz6pXgvjImyPLiw0=",
+  "Hash": "CCZshdPs2zH2lAt3ZB2KD/8bVpomn57yXJj02mcb4XU=",
   "Source": "DietDoHongTran",
   "BasePath": "_content/DietDoHongTran",
   "Mode": "Default",
@@ -1445,6 +1445,27 @@
       "OriginalItemSpec": "wwwroot\\images\\01682b08-027a-4c60-8c03-6599ac178ad4_quan-tai-go-trai-phat-giao-4.jpg"
     },
     {
+      "Identity": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\02a7ca51-b6c3-42c5-854b-dbfec1491598_cac-loai-quan-tai-3-1024x576.jpg",
+      "SourceId": "DietDoHongTran",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\",
+      "BasePath": "_content/DietDoHongTran",
+      "RelativePath": "images/02a7ca51-b6c3-42c5-854b-dbfec1491598_cac-loai-quan-tai-3-1024x576#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l7q2ggml0z",
+      "Integrity": "zx6H5Kj4+7/QMnB6FCq6MncUFXMYwlPRbZbANB79dQk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\02a7ca51-b6c3-42c5-854b-dbfec1491598_cac-loai-quan-tai-3-1024x576.jpg"
+    },
+    {
       "Identity": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\03db7edc-14c9-43cc-8496-67db1e35b67b_quan-tai-go-trai-phat-giao-4.jpg",
       "SourceId": "DietDoHongTran",
       "SourceType": "Discovered",
@@ -1590,6 +1611,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\30b2591e-7af6-46b7-876c-93eff304229a_quantai.jpg"
+    },
+    {
+      "Identity": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\380b1572-9c0b-436c-a7bb-78dcc4e4dca0_quantai.jpg",
+      "SourceId": "DietDoHongTran",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\",
+      "BasePath": "_content/DietDoHongTran",
+      "RelativePath": "images/380b1572-9c0b-436c-a7bb-78dcc4e4dca0_quantai#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yur20n56yv",
+      "Integrity": "dno6swIgZJfYhWu/eowmo8R341vdpzMo9FlC+cNSgxw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\380b1572-9c0b-436c-a7bb-78dcc4e4dca0_quantai.jpg"
     },
     {
       "Identity": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\47c230d4-9bc6-49da-962f-f0ca1c675efb_qtkl1.jpg",
@@ -1884,6 +1926,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\a787c4b4-bb46-427e-8d6b-018d7ebddb6d_z6417703215246_5480201f8dd27a5809372a8467d47541.jpg"
+    },
+    {
+      "Identity": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\ac0debb0-b570-419d-944c-33f3fa768a1a_quan-tai-go-trai-phat-giao-4.jpg",
+      "SourceId": "DietDoHongTran",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\",
+      "BasePath": "_content/DietDoHongTran",
+      "RelativePath": "images/ac0debb0-b570-419d-944c-33f3fa768a1a_quan-tai-go-trai-phat-giao-4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ln2nkjb03o",
+      "Integrity": "zyI8wN0/taDFKH1cKjkA2cSnnQA+KTWr8gNQTmHpuxg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ac0debb0-b570-419d-944c-33f3fa768a1a_quan-tai-go-trai-phat-giao-4.jpg"
     },
     {
       "Identity": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\af899f2c-8e58-4c4b-8687-e0e770ccda7c_quan-tai-go-trai-phat-giao-4.jpg",
@@ -6255,6 +6318,88 @@
       ]
     },
     {
+      "Route": "images/02a7ca51-b6c3-42c5-854b-dbfec1491598_cac-loai-quan-tai-3-1024x576.jpg",
+      "AssetFile": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\02a7ca51-b6c3-42c5-854b-dbfec1491598_cac-loai-quan-tai-3-1024x576.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48753"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zx6H5Kj4+7/QMnB6FCq6MncUFXMYwlPRbZbANB79dQk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 11:09:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zx6H5Kj4+7/QMnB6FCq6MncUFXMYwlPRbZbANB79dQk="
+        }
+      ]
+    },
+    {
+      "Route": "images/02a7ca51-b6c3-42c5-854b-dbfec1491598_cac-loai-quan-tai-3-1024x576.l7q2ggml0z.jpg",
+      "AssetFile": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\02a7ca51-b6c3-42c5-854b-dbfec1491598_cac-loai-quan-tai-3-1024x576.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48753"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zx6H5Kj4+7/QMnB6FCq6MncUFXMYwlPRbZbANB79dQk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 11:09:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l7q2ggml0z"
+        },
+        {
+          "Name": "label",
+          "Value": "images/02a7ca51-b6c3-42c5-854b-dbfec1491598_cac-loai-quan-tai-3-1024x576.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zx6H5Kj4+7/QMnB6FCq6MncUFXMYwlPRbZbANB79dQk="
+        }
+      ]
+    },
+    {
       "Route": "images/03db7edc-14c9-43cc-8496-67db1e35b67b_quan-tai-go-trai-phat-giao-4.jpg",
       "AssetFile": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\03db7edc-14c9-43cc-8496-67db1e35b67b_quan-tai-go-trai-phat-giao-4.jpg",
       "Selectors": [],
@@ -6821,6 +6966,88 @@
         {
           "Name": "label",
           "Value": "images/30b2591e-7af6-46b7-876c-93eff304229a_quantai.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dno6swIgZJfYhWu/eowmo8R341vdpzMo9FlC+cNSgxw="
+        }
+      ]
+    },
+    {
+      "Route": "images/380b1572-9c0b-436c-a7bb-78dcc4e4dca0_quantai.jpg",
+      "AssetFile": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\380b1572-9c0b-436c-a7bb-78dcc4e4dca0_quantai.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47636"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dno6swIgZJfYhWu/eowmo8R341vdpzMo9FlC+cNSgxw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 11:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dno6swIgZJfYhWu/eowmo8R341vdpzMo9FlC+cNSgxw="
+        }
+      ]
+    },
+    {
+      "Route": "images/380b1572-9c0b-436c-a7bb-78dcc4e4dca0_quantai.yur20n56yv.jpg",
+      "AssetFile": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\380b1572-9c0b-436c-a7bb-78dcc4e4dca0_quantai.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47636"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dno6swIgZJfYhWu/eowmo8R341vdpzMo9FlC+cNSgxw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 11:09:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yur20n56yv"
+        },
+        {
+          "Name": "label",
+          "Value": "images/380b1572-9c0b-436c-a7bb-78dcc4e4dca0_quantai.jpg"
         },
         {
           "Name": "integrity",
@@ -7973,6 +8200,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-XjKrbqmg5+jaH5wBVQDkTLchXsokHQwQ66td1ihHKWo="
+        }
+      ]
+    },
+    {
+      "Route": "images/ac0debb0-b570-419d-944c-33f3fa768a1a_quan-tai-go-trai-phat-giao-4.jpg",
+      "AssetFile": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\ac0debb0-b570-419d-944c-33f3fa768a1a_quan-tai-go-trai-phat-giao-4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40634"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zyI8wN0/taDFKH1cKjkA2cSnnQA+KTWr8gNQTmHpuxg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 11:09:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zyI8wN0/taDFKH1cKjkA2cSnnQA+KTWr8gNQTmHpuxg="
+        }
+      ]
+    },
+    {
+      "Route": "images/ac0debb0-b570-419d-944c-33f3fa768a1a_quan-tai-go-trai-phat-giao-4.ln2nkjb03o.jpg",
+      "AssetFile": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\ac0debb0-b570-419d-944c-33f3fa768a1a_quan-tai-go-trai-phat-giao-4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40634"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zyI8wN0/taDFKH1cKjkA2cSnnQA+KTWr8gNQTmHpuxg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 11:09:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ln2nkjb03o"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ac0debb0-b570-419d-944c-33f3fa768a1a_quan-tai-go-trai-phat-giao-4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zyI8wN0/taDFKH1cKjkA2cSnnQA+KTWr8gNQTmHpuxg="
         }
       ]
     },

@@ -136,6 +136,7 @@ namespace DietDoHongTran.Controllers
                         _context.InvoiceDetails.Add(invoiceDetail);
 
                         product.Instock -= item.Quantity;
+                        product.Sold += item.Quantity;
                         _context.Products.Update(product);
                     }
 
@@ -166,11 +167,8 @@ namespace DietDoHongTran.Controllers
                 .FirstOrDefaultAsync(i => i.Id == id);
 
             if (invoice == null)
-            {
                 return NotFound();
-            }
 
-            // Tạo dictionary ánh xạ ProductId -> ProductName
             var productNames = await _context.Products
                 .ToDictionaryAsync(p => p.Id, p => p.Name);
 
@@ -185,40 +183,49 @@ namespace DietDoHongTran.Controllers
             return View(); // Bạn có thể tạo trang cảm ơn ở đây
         }
 
+        // Hiển thị tất cả hóa đơn
         public async Task<IActionResult> Index()
         {
-            var userId = _userManager.GetUserId(User);
-
-            // Lấy danh sách hóa đơn của user
             var invoices = await _context.Invoices
-                .Where(i => i.ApplicationUserId == userId)
-                .Include(i => i.InvoiceDetails)  // Bao gồm chi tiết hóa đơn
+                .Include(i => i.InvoiceDetails)
                 .OrderByDescending(i => i.CreatedAt)
                 .ToListAsync();
 
-            if (!invoices.Any())
-            {
-                TempData["ErrorMessage"] = "Bạn chưa có hóa đơn nào!";
-            }
+            var productNames = await _context.Products
+                .ToDictionaryAsync(p => p.Id, p => p.Name);
 
-            // Lấy danh sách ProductId từ InvoiceDetails
+            ViewBag.ProductNames = productNames;
+
+            return View(invoices);
+        }
+
+        [Authorize]
+        public async Task<IActionResult> GetUserInvoices()
+        {
+            var userId = _userManager.GetUserId(User);
+
+            var invoices = await _context.Invoices
+                .Where(i => i.ApplicationUserId == userId)
+                .Include(i => i.InvoiceDetails) // Bao gồm chi tiết hóa đơn
+                .OrderByDescending(i => i.CreatedAt)
+                .ToListAsync();
+
+            // Lấy danh sách sản phẩm từ InvoiceDetails
             var productIds = invoices.SelectMany(i => i.InvoiceDetails)
-                .Select(d => d.ProductId)
-                .Distinct()
-                .ToList();
+                                     .Select(d => d.ProductId)
+                                     .Distinct()
+                                     .ToList();
 
-            // Lấy thông tin sản phẩm từ ProductId
             var products = await _context.Products
                 .Where(p => productIds.Contains(p.Id))
                 .ToListAsync();
 
             // Tạo dictionary ánh xạ ProductId -> ProductName
             var productNames = products.ToDictionary(p => p.Id, p => p.Name);
-
-            // Gán sản phẩm vào ViewBag để truy cập trong View
             ViewBag.ProductNames = productNames;
 
-            return View(invoices);  // Trả về danh sách hóa đơn
+            // Trả về Partial View với model là danh sách hóa đơn
+            return PartialView("_InvoicesPartial", invoices);
         }
     }
 }

@@ -159,6 +159,5 @@ namespace DietDoHongTran.Controllers
 
             return Json(new { count = itemCount });
         }
-
     }
 }

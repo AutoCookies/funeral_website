@@ -157,6 +157,7 @@ namespace DietDoHongTran.Areas.Admin.Controllers
                 existingProduct.Price = product.Price;
                 existingProduct.Description = product.Description;
                 existingProduct.CategoryId = product.CategoryId;
+                existingProduct.Instock = product.Instock;
 
                 await _productRepository.UpdateAsync(existingProduct);
                 return RedirectToAction(nameof(Index));
