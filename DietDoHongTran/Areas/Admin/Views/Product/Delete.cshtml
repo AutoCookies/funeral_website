@@ -35,7 +35,7 @@
                         <dd class="col-sm-8 font-italic">@Model.Price.ToString("N0") VND</dd>
 
                         <dt class="col-sm-4 text-muted">Mô tả</dt>
-                        <dd class="col-sm-8">@Model.Description</dd>
+                        <dd class="col-sm-8">@Html.Raw(Model.Description)</dd>
 
                         <dt class="col-sm-4 text-muted">Danh mục</dt>
                         <dd class="col-sm-8">@Model.Category?.Name</dd>

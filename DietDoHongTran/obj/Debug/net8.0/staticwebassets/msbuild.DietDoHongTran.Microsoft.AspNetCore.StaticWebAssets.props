@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>5oq5nziqpq</Fingerprint>
-      <Integrity>RZkoP9p65/RxxNeK63zzrT5Ilzw+X7lbXQITLQQ+E64=</Integrity>
+      <Fingerprint>t1yodwb8km</Fingerprint>
+      <Integrity>n+B4EnSYrgSp6X6zXEqyb2rUFtzp4Kv64XZCKFWUCco=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\style.css'))</OriginalItemSpec>
@@ -198,6 +198,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\16639fad-52b8-48ae-afef-420c2ba13425_quantai.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1ac658e0-7701-4ac9-92f0-bcba2d981c3b_cac-loai-quan-tai-3-1024x576.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DietDoHongTran</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DietDoHongTran</BasePath>
+      <RelativePath>images/1ac658e0-7701-4ac9-92f0-bcba2d981c3b_cac-loai-quan-tai-3-1024x576.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>l7q2ggml0z</Fingerprint>
+      <Integrity>zx6H5Kj4+7/QMnB6FCq6MncUFXMYwlPRbZbANB79dQk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1ac658e0-7701-4ac9-92f0-bcba2d981c3b_cac-loai-quan-tai-3-1024x576.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1f3b043e-50ae-4214-aa0c-989c927575e8_quantai.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DietDoHongTran</SourceId>
@@ -252,6 +270,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4a311dbb-6bbb-4539-be8d-a587b1d19322_quan-tai-go-trai-phat-giao-4.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4cd7c987-0c23-4abc-8f28-d3637980103d_quantai.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DietDoHongTran</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DietDoHongTran</BasePath>
+      <RelativePath>images/4cd7c987-0c23-4abc-8f28-d3637980103d_quantai.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>yur20n56yv</Fingerprint>
+      <Integrity>dno6swIgZJfYhWu/eowmo8R341vdpzMo9FlC+cNSgxw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4cd7c987-0c23-4abc-8f28-d3637980103d_quantai.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\55e9137d-1a7c-4655-8365-c3f5dc6a2e1c_quan-tai-go-trai-phat-giao-4.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DietDoHongTran</SourceId>
@@ -269,6 +305,78 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\55e9137d-1a7c-4655-8365-c3f5dc6a2e1c_quan-tai-go-trai-phat-giao-4.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5903d8d5-3ac4-4041-9955-e0b30214f416_khung-hinh-tho-6.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DietDoHongTran</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DietDoHongTran</BasePath>
+      <RelativePath>images/5903d8d5-3ac4-4041-9955-e0b30214f416_khung-hinh-tho-6.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vf1gyw3i1m</Fingerprint>
+      <Integrity>tQICHha6s96aYanTd8KGfEDaBjQO7L/v+acmTMNvjjY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5903d8d5-3ac4-4041-9955-e0b30214f416_khung-hinh-tho-6.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\6ad2bc01-7ebc-4b52-bca2-f6a23dea3c8f_admin_1366163367.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DietDoHongTran</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DietDoHongTran</BasePath>
+      <RelativePath>images/6ad2bc01-7ebc-4b52-bca2-f6a23dea3c8f_admin_1366163367.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hllzhav4kg</Fingerprint>
+      <Integrity>FWFXs4Wk45tDYpTqNZrdQfZ2ndJ02QSK66Bs6oGsLbM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\6ad2bc01-7ebc-4b52-bca2-f6a23dea3c8f_admin_1366163367.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\75ba7e54-1a82-4c73-8833-81d224125e74_hinh-anh-ban-tho-dung-de-ghep-anh_052323894.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DietDoHongTran</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DietDoHongTran</BasePath>
+      <RelativePath>images/75ba7e54-1a82-4c73-8833-81d224125e74_hinh-anh-ban-tho-dung-de-ghep-anh_052323894.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>2xn14wumpu</Fingerprint>
+      <Integrity>qmx1uBh2kpDCxjrWPHNFhkwdqFIcOVMtwTqdjPZo3Uo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\75ba7e54-1a82-4c73-8833-81d224125e74_hinh-anh-ban-tho-dung-de-ghep-anh_052323894.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\844583d4-acec-4b2f-bc55-882d4fa1e628_Khung-don-10x15-1.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DietDoHongTran</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DietDoHongTran</BasePath>
+      <RelativePath>images/844583d4-acec-4b2f-bc55-882d4fa1e628_Khung-don-10x15-1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>exvufnjcvl</Fingerprint>
+      <Integrity>3qc4eQjTHqTrbFhbzw+ezAv71dk6byBf2n2DqkUT9QY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\844583d4-acec-4b2f-bc55-882d4fa1e628_Khung-don-10x15-1.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8baf66d6-4c36-420f-ae05-bc9b4839603c_qtve1.jpg'))">
       <SourceType>Package</SourceType>
@@ -468,6 +576,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e16643fa-54c0-4990-90ff-3a0b597cc459_quantai.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e82e916f-1867-4d7b-b656-2be4693f469a_z6417703215246_5480201f8dd27a5809372a8467d47541.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DietDoHongTran</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DietDoHongTran</BasePath>
+      <RelativePath>images/e82e916f-1867-4d7b-b656-2be4693f469a_z6417703215246_5480201f8dd27a5809372a8467d47541.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ultbjgbeal</Fingerprint>
+      <Integrity>XjKrbqmg5+jaH5wBVQDkTLchXsokHQwQ66td1ihHKWo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e82e916f-1867-4d7b-b656-2be4693f469a_z6417703215246_5480201f8dd27a5809372a8467d47541.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f9e5f872-6aa7-4c55-832b-8c170e8bb93b_quan-tai-go-trai-phat-giao-4.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DietDoHongTran</SourceId>
@@ -503,6 +629,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\logo.svg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\productBackground.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DietDoHongTran</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DietDoHongTran</BasePath>
+      <RelativePath>images/productBackground.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>swqz41bb4z</Fingerprint>
+      <Integrity>/Aq9NgHgi8JmDpHDNXqBAWJsULp9lc2uWii3x1nGzqc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\productBackground.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))">
       <SourceType>Package</SourceType>

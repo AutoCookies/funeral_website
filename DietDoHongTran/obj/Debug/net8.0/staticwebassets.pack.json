@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\images\\16639fad-52b8-48ae-afef-420c2ba13425_quantai.jpg"
     },
     {
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\1ac658e0-7701-4ac9-92f0-bcba2d981c3b_cac-loai-quan-tai-3-1024x576.jpg",
+      "PackagePath": "staticwebassets\\images\\1ac658e0-7701-4ac9-92f0-bcba2d981c3b_cac-loai-quan-tai-3-1024x576.jpg"
+    },
+    {
       "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\1f3b043e-50ae-4214-aa0c-989c927575e8_quantai.jpg",
       "PackagePath": "staticwebassets\\images\\1f3b043e-50ae-4214-aa0c-989c927575e8_quantai.jpg"
     },
@@ -57,8 +61,28 @@
       "PackagePath": "staticwebassets\\images\\4a311dbb-6bbb-4539-be8d-a587b1d19322_quan-tai-go-trai-phat-giao-4.jpg"
     },
     {
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\4cd7c987-0c23-4abc-8f28-d3637980103d_quantai.jpg",
+      "PackagePath": "staticwebassets\\images\\4cd7c987-0c23-4abc-8f28-d3637980103d_quantai.jpg"
+    },
+    {
       "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\55e9137d-1a7c-4655-8365-c3f5dc6a2e1c_quan-tai-go-trai-phat-giao-4.jpg",
       "PackagePath": "staticwebassets\\images\\55e9137d-1a7c-4655-8365-c3f5dc6a2e1c_quan-tai-go-trai-phat-giao-4.jpg"
+    },
+    {
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\5903d8d5-3ac4-4041-9955-e0b30214f416_khung-hinh-tho-6.jpg",
+      "PackagePath": "staticwebassets\\images\\5903d8d5-3ac4-4041-9955-e0b30214f416_khung-hinh-tho-6.jpg"
+    },
+    {
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\6ad2bc01-7ebc-4b52-bca2-f6a23dea3c8f_admin_1366163367.png",
+      "PackagePath": "staticwebassets\\images\\6ad2bc01-7ebc-4b52-bca2-f6a23dea3c8f_admin_1366163367.png"
+    },
+    {
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\75ba7e54-1a82-4c73-8833-81d224125e74_hinh-anh-ban-tho-dung-de-ghep-anh_052323894.png",
+      "PackagePath": "staticwebassets\\images\\75ba7e54-1a82-4c73-8833-81d224125e74_hinh-anh-ban-tho-dung-de-ghep-anh_052323894.png"
+    },
+    {
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\844583d4-acec-4b2f-bc55-882d4fa1e628_Khung-don-10x15-1.jpg",
+      "PackagePath": "staticwebassets\\images\\844583d4-acec-4b2f-bc55-882d4fa1e628_Khung-don-10x15-1.jpg"
     },
     {
       "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\8baf66d6-4c36-420f-ae05-bc9b4839603c_qtve1.jpg",
@@ -105,12 +129,20 @@
       "PackagePath": "staticwebassets\\images\\e16643fa-54c0-4990-90ff-3a0b597cc459_quantai.jpg"
     },
     {
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\e82e916f-1867-4d7b-b656-2be4693f469a_z6417703215246_5480201f8dd27a5809372a8467d47541.jpg",
+      "PackagePath": "staticwebassets\\images\\e82e916f-1867-4d7b-b656-2be4693f469a_z6417703215246_5480201f8dd27a5809372a8467d47541.jpg"
+    },
+    {
       "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\f9e5f872-6aa7-4c55-832b-8c170e8bb93b_quan-tai-go-trai-phat-giao-4.jpg",
       "PackagePath": "staticwebassets\\images\\f9e5f872-6aa7-4c55-832b-8c170e8bb93b_quan-tai-go-trai-phat-giao-4.jpg"
     },
     {
       "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\logo.svg",
       "PackagePath": "staticwebassets\\images\\logo.svg"
+    },
+    {
+      "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\productBackground.jpg",
+      "PackagePath": "staticwebassets\\images\\productBackground.jpg"
     },
     {
       "Id": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\js\\site.js",

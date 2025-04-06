@@ -33,7 +33,7 @@
             <tr>
                 <td>@Html.DisplayFor(modelItem => item.Name)</td>
                 <td>@Html.DisplayFor(modelItem => item.Price) VND</td>
-                <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                <td>@Html.Raw(item.Description)</td>
                 <td>
                     @if (!string.IsNullOrEmpty(item.ImageUrl))
                     {

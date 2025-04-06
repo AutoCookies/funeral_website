@@ -44,7 +44,7 @@
 
                         <div class="form-group mt-2">
                             <label asp-for="Description" class="form-label">Mô tả</label>
-                            <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+                            <textarea asp-for="Description" class="form-control" rows="4" id="editor"></textarea>
                             <span asp-validation-for="Description" class="text-danger"></span>
                         </div>
 
@@ -77,5 +77,13 @@
             let imageUrl = document.querySelector("[name='ImageUrl']").value;
             document.getElementById("previewImage").src = imageUrl || "/images/no-image.jpg";
         }
+    </script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
     </script>
 }

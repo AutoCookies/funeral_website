@@ -35,8 +35,8 @@
                         <dd class="col-sm-8 font-italic">@Html.DisplayFor(model => model.Price) VND</dd>
 
                         <dt class="col-sm-4 text-muted">Mô tả</dt>
-                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Description)</dd>
-
+                        <dd class="col-sm-8">
+                        <dd class="col-sm-8">@Html.Raw(Model.Description)</dd>
                         <dt class="col-sm-4 text-muted">Danh mục</dt>
                         <dd class="col-sm-8">@Html.DisplayFor(model => model.Category.Name)</dd>
                     </dl>

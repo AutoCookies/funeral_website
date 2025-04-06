@@ -57,6 +57,13 @@ header {
 .main-content {
     flex-grow: 1;
     padding-bottom: 60px;
+    background-image: url('~/images/productBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
 }
 
 /* Footer */
