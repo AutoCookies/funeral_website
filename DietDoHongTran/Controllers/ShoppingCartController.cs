@@ -27,10 +27,23 @@ namespace DietDoHongTran.Controllers
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (userId == null) return RedirectToAction("Login", "Account");
 
+            // Lấy giỏ hàng
             var shoppingCart = await _context.ShoppingCarts
                 .Include(sc => sc.Items)
                 .ThenInclude(ci => ci.Product)
                 .FirstOrDefaultAsync(sc => sc.ApplicationUserId == userId);
+
+            // Lấy danh sách hóa đơn + chi tiết hóa đơn + sản phẩm tương ứng
+            var invoices = await _context.Invoices
+                .Where(i => i.ApplicationUserId == userId)
+                .Include(i => i.InvoiceDetails)
+                .ToListAsync();
+
+            var products = await _context.Products.ToListAsync();
+
+            // Truyền qua ViewBag để render tab "Đã mua"
+            ViewBag.Invoices = invoices;
+            ViewBag.Products = products;
 
             return View(shoppingCart);
         }

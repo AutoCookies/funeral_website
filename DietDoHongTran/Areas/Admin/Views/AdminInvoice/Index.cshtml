@@ -2,7 +2,7 @@
 
 <h2 class="mb-4">📦 Danh sách hóa đơn</h2>
 
-<table class="table table-bordered table-hover table-striped">
+<table id="invocieTable" class="table table-bordered table-hover table-striped">
     <thead class="thead-dark">
         <tr>
             <th>Mã HD</th>
@@ -37,3 +37,25 @@
         }
     </tbody>
 </table>
+
+<!-- Include jQuery first -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include DataTables CSS for 2.x version -->
+<link href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css" rel="stylesheet">
+
+<!-- Include DataTables JS for 2.x version -->
+<script src="https://cdn.datatables.net/2.2.2/js/dataTables.min.js"></script>
+
+<!-- Initialize DataTable -->
+<script>
+    $(document).ready(function () {
+        // Initialize DataTable on #productTable
+        new DataTable('#invocieTable', {
+            paging: true,
+            searching: true,
+            ordering: true,
+            pageLength: 10
+        });
+    });
+</script>
