@@ -1,0 +1,20 @@
+﻿@model DietDoHongTran.Models.ApplicationUser
+
+@{
+    ViewData["Title"] = "Xóa Người Dùng";
+}
+
+<h2 class="mt-4">Xác nhận xóa người dùng</h2>
+
+<div class="alert alert-warning" role="alert">
+    Bạn có chắc chắn muốn xóa người dùng có Email: <strong>@Model.Email</strong> không?
+</div>
+
+<form asp-area="Admin" asp-controller="UserManagement" asp-action="Delete" method="post" onsubmit="return confirm('Bạn có chắc chắn muốn xóa người dùng này không?');">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <button type="submit" class="btn btn-danger">Xóa</button>
+        <a asp-area="Admin" asp-controller="UserManagement" asp-action="Index" class="btn btn-secondary">Hủy</a>
+    </div>
+</form>

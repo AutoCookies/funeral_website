@@ -4,7 +4,8 @@ using Microsoft.AspNetCore.Authorization;
 using DietDoHongTran.Models; // Giả sử ApplicationUser nằm trong đây
 using System.Threading.Tasks;
 using System.Linq;
-using DietDoHongTran.ViewModels; // Giả sử ManageUserRolesViewModel nằm trong đây
+using DietDoHongTran.ViewModels;
+using Microsoft.EntityFrameworkCore; // Giả sử ManageUserRolesViewModel nằm trong đây
 
 namespace DietDoHongTran.Areas.Admin.Controllers
 {
@@ -47,29 +48,37 @@ namespace DietDoHongTran.Areas.Admin.Controllers
             return View(user);
         }
 
-        // Gán vai trò cho người dùng
+        // GET: Quản lý vai trò của người dùng
         public async Task<IActionResult> ManageRoles(string id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var user = await _userManager.FindByIdAsync(id);
-            if (user == null)
+            if (user == null) return NotFound();
+
+            var allRoles = await _roleManager.Roles.ToListAsync();
+            var userRoles = await _userManager.GetRolesAsync(user);
+
+            // Cập nhật NormalizedName cho các vai trò chưa có
+            foreach (var role in allRoles)
             {
-                return NotFound();
+                if (string.IsNullOrEmpty(role.NormalizedName))
+                {
+                    role.NormalizedName = role.Name.ToUpper();
+                    await _roleManager.UpdateAsync(role);
+                }
             }
 
             var model = new ManageUserRolesViewModel
             {
                 UserId = user.Id,
-                Email = user.Email,
-                Roles = _roleManager.Roles.Select(r => new RoleSelection
-                {
-                    RoleName = r.Name,
-                    Selected = _userManager.IsInRoleAsync(user, r.Name).Result
-                }).ToList()
+                Roles = allRoles
+                    .Where(r => !string.IsNullOrEmpty(r.Name)) // Tránh lỗi nếu Role.Name null
+                    .Select(r => new RoleSelection
+                    {
+                        RoleName = r.Name,
+                        Selected = userRoles.Contains(r.Name)
+                    }).ToList()
             };
 
             return View(model);
@@ -77,7 +86,7 @@ namespace DietDoHongTran.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> ManageRoles(ManageUserRolesViewModel model)
+        public async Task<IActionResult> ManageRoles([Bind("UserId,Roles")] ManageUserRolesViewModel model)
         {
             var user = await _userManager.FindByIdAsync(model.UserId);
             if (user == null)
@@ -85,16 +94,38 @@ namespace DietDoHongTran.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            // Xóa hết các vai trò hiện có của người dùng
+            // Lấy các vai trò hiện có của người dùng
             var currentRoles = await _userManager.GetRolesAsync(user);
-            await _userManager.RemoveFromRolesAsync(user, currentRoles);
+            var removeResult = await _userManager.RemoveFromRolesAsync(user, currentRoles);
+            if (!removeResult.Succeeded)
+            {
+                ModelState.AddModelError("", "Không thể xóa vai trò hiện tại.");
+                return View(model);
+            }
 
-            // Thêm vai trò được chọn
+            // Thêm vai trò được chọn và cập nhật NormalizedName cho từng vai trò
             var selectedRoles = model.Roles.Where(r => r.Selected).Select(r => r.RoleName);
-            await _userManager.AddToRolesAsync(user, selectedRoles);
+
+            foreach (var roleName in selectedRoles)
+            {
+                var role = await _roleManager.FindByNameAsync(roleName);
+                if (role != null && string.IsNullOrEmpty(role.NormalizedName))
+                {
+                    role.NormalizedName = role.Name.ToUpper();
+                    await _roleManager.UpdateAsync(role);
+                }
+            }
+
+            var addResult = await _userManager.AddToRolesAsync(user, selectedRoles);
+            if (!addResult.Succeeded)
+            {
+                ModelState.AddModelError("", "Không thể cập nhật vai trò.");
+                return View(model);
+            }
 
             return RedirectToAction(nameof(Details), new { id = model.UserId });
         }
+
 
         // Xóa người dùng
         public async Task<IActionResult> Delete(string id)
