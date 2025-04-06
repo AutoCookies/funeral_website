@@ -1,0 +1,172 @@
+﻿@model DietDoHongTran.Models.ProductStatisticsViewModel
+@using System.Text.Json
+
+@{
+    ViewData["Title"] = "Thống kê sản phẩm - " + Model.Date.ToShortDateString();
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Chart.js - Đảm bảo load trước khi dùng -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        .chart-container {
+            margin-top: 30px;
+        }
+
+            .chart-container canvas {
+                width: 100% !important;
+                height: 400px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <h2 class="mb-4">@ViewData["Title"]</h2>
+
+        <!-- Biểu đồ cột tổng quan -->
+        <div class="chart-container">
+            <canvas id="summaryChart"></canvas>
+        </div>
+
+        <!-- Biểu đồ tròn: Top 5 bán chạy -->
+        <div class="chart-container mt-5">
+            <canvas id="topSellingChart"></canvas>
+        </div>
+
+        <!-- Danh sách hết hàng -->
+        <h3 class="mt-5">Sản phẩm hết hàng</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Tên</th>
+                    <th>Danh mục</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model.OutOfStockProducts)
+                {
+                    <tr>
+                        <td>@product.Name</td>
+                        <td>@product.Category?.Name</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <!-- Danh sách sắp hết hàng -->
+        <h3 class="mt-5">Sản phẩm sắp hết (<=5)</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Tên</th>
+                    <th>Tồn kho</th>
+                    <th>Danh mục</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model.LowStockProducts)
+                {
+                    <tr class="@(product.Instock <= 2 ? "table-danger" : "table-warning")">
+                        <td>@product.Name</td>
+                        <td>@product.Instock</td>
+                        <td>@product.Category?.Name</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <!-- Biểu đồ cột: thống kê theo danh mục -->
+        <div class="chart-container mt-5">
+            <canvas id="categoryChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Script cho biểu đồ -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Biểu đồ cột tổng quan
+            new Chart(document.getElementById('summaryChart').getContext('2d'), {
+                type: 'bar',
+                data: {
+                    labels: ['Tổng sản phẩm', 'Tồn kho', 'Đã bán', 'Giá trị tồn kho'],
+                    datasets: [{
+                        label: 'Thống kê tổng quan',
+                        data: [@Model.TotalProducts, @Model.TotalInStock, @Model.TotalSold, @Model.TotalValueInStock],
+                        backgroundColor: ['#4CAF50', '#2196F3', '#FFC107', '#E91E63']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            // Biểu đồ tròn: Top 5 bán chạy
+            new Chart(document.getElementById('topSellingChart').getContext('2d'), {
+                type: 'pie',
+                data: {
+                    labels: @Html.Raw(JsonSerializer.Serialize(Model.TopSellingProducts.Select(p => p.Name))),
+                    datasets: [{
+                        label: 'Top bán chạy',
+                        data: @Html.Raw(JsonSerializer.Serialize(Model.TopSellingProducts.Select(p => p.Sold))),
+                        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#81C784', '#BA68C8']
+                    }]
+                },
+                options: {
+                    responsive: true
+                }
+            });
+
+            // Biểu đồ cột: thống kê theo danh mục
+            const categories = @Html.Raw(JsonSerializer.Serialize(Model.ProductsByCategory.Select(c => c.Category)));
+            const sold = @Html.Raw(JsonSerializer.Serialize(Model.ProductsByCategory.Select(c => c.TotalSold)));
+            const stock = @Html.Raw(JsonSerializer.Serialize(Model.ProductsByCategory.Select(c => c.TotalInStock)));
+
+            new Chart(document.getElementById('categoryChart').getContext('2d'), {
+                type: 'bar',
+                data: {
+                    labels: categories,
+                    datasets: [
+                        {
+                            label: 'Đã bán',
+                            data: sold,
+                            backgroundColor: '#42A5F5'
+                        },
+                        {
+                            label: 'Tồn kho',
+                            data: stock,
+                            backgroundColor: '#66BB6A'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+    <!-- jQuery & Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

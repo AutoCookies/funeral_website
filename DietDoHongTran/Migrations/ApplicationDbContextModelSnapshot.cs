@@ -271,6 +271,34 @@ namespace DietDoHongTran.Migrations
                     b.ToTable("ProductImages");
                 });
 
+            modelBuilder.Entity("DietDoHongTran.Models.ProductStatistic", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("TotalInStock")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalProducts")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalSold")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("TotalValueInStock")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductStatistics");
+                });
+
             modelBuilder.Entity("DietDoHongTran.Models.Service", b =>
                 {
                     b.Property<int>("Id")

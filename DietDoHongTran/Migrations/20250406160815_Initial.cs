@@ -87,6 +87,23 @@ namespace DietDoHongTran.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "ProductStatistics",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Date = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    TotalProducts = table.Column<int>(type: "int", nullable: false),
+                    TotalInStock = table.Column<int>(type: "int", nullable: false),
+                    TotalSold = table.Column<int>(type: "int", nullable: false),
+                    TotalValueInStock = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ProductStatistics", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Services",
                 columns: table => new
                 {
@@ -446,6 +463,9 @@ namespace DietDoHongTran.Migrations
 
             migrationBuilder.DropTable(
                 name: "ProductImages");
+
+            migrationBuilder.DropTable(
+                name: "ProductStatistics");
 
             migrationBuilder.DropTable(
                 name: "ServiceProducts");

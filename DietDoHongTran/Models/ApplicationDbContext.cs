@@ -18,6 +18,7 @@ namespace DietDoHongTran.Models
         public DbSet<InvoiceDetail> InvoiceDetails { get; set; }
 
         public DbSet<CartItem> CartItems { get; set; } // Thêm DbSet cho CartItem
+        public DbSet<ProductStatistic> ProductStatistics { get; set; } // Thêm DbSet cho ProductStatistic
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

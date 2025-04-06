@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DietDoHongTran.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250405155133_Initial")]
+    [Migration("20250406160815_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -272,6 +272,34 @@ namespace DietDoHongTran.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("ProductImages");
+                });
+
+            modelBuilder.Entity("DietDoHongTran.Models.ProductStatistic", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("TotalInStock")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalProducts")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalSold")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("TotalValueInStock")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductStatistics");
                 });
 
             modelBuilder.Entity("DietDoHongTran.Models.Service", b =>
