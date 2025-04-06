@@ -75,47 +75,88 @@ namespace DietDoHongTran.Controllers
                 return RedirectToAction("Index", "ShoppingCart");
             }
 
-            // ✅ Gán ApplicationUserId và khởi tạo InvoiceDetails
-            var invoice = new Invoice
+            using (var transaction = _context.Database.BeginTransaction())
             {
-                ApplicationUserId = user.Id,  // 🛠 FIX lỗi thiếu ApplicationUserId
-                TotalAmount = shoppingCart.Items.Sum(i => i.Product.Price * i.Quantity),
-                CreatedAt = DateTime.Now,
-                IsPaid = true,
-                ShippingAddress = model.ShippingAddress,
-                ShippingCity = model.ShippingCity,
-                ShippingPostalCode = model.ShippingPostalCode,
-                ShippingCountry = model.ShippingCountry,
-                InvoiceDetails = new List<InvoiceDetail>()  // 🛠 FIX lỗi null
-            };
-
-            _context.Invoices.Add(invoice);
-            await _context.SaveChangesAsync(); // Lưu để có InvoiceId
-
-            // ✅ Thêm chi tiết hóa đơn
-            foreach (var item in shoppingCart.Items)
-            {
-                var invoiceDetail = new InvoiceDetail
+                try
                 {
-                    InvoiceId = invoice.Id,
-                    ProductId = item.ProductId,
-                    Quantity = item.Quantity,
-                    Price = item.Product.Price
-                };
+                    // Kiểm tra số lượng mua so với InStock trước khi tạo hóa đơn
+                    foreach (var item in shoppingCart.Items)
+                    {
+                        var product = await _context.Products.FindAsync(item.ProductId);
+                        if (product == null)
+                        {
+                            ModelState.AddModelError("", $"Sản phẩm với ID {item.ProductId} không tồn tại.");
+                            return View(model);
+                        }
 
-                invoice.InvoiceDetails.Add(invoiceDetail);
-                _context.InvoiceDetails.Add(invoiceDetail);
+                        if (product.Instock == 0)
+                        {
+                            ModelState.AddModelError("", $"Sản phẩm {product.Name} đã hết hàng.");
+                            return View(model);
+                        }
+
+                        if (product.Instock < item.Quantity)
+                        {
+                            ModelState.AddModelError("", $"Không đủ số lượng tồn kho cho sản phẩm {product.Name}.");
+                            return View(model);
+                        }
+                    }
+
+                    // Tạo hóa đơn
+                    var invoice = new Invoice
+                    {
+                        ApplicationUserId = user.Id,
+                        TotalAmount = shoppingCart.Items.Sum(i => i.Product.Price * i.Quantity),
+                        CreatedAt = DateTime.Now,
+                        IsPaid = true,
+                        ShippingAddress = model.ShippingAddress,
+                        ShippingCity = model.ShippingCity,
+                        ShippingPostalCode = model.ShippingPostalCode,
+                        ShippingCountry = model.ShippingCountry,
+                        InvoiceDetails = new List<InvoiceDetail>()
+                    };
+
+                    _context.Invoices.Add(invoice);
+                    await _context.SaveChangesAsync();
+
+                    // Tạo chi tiết hóa đơn và cập nhật InStock
+                    foreach (var item in shoppingCart.Items)
+                    {
+                        var product = await _context.Products.FindAsync(item.ProductId);
+
+                        var invoiceDetail = new InvoiceDetail
+                        {
+                            InvoiceId = invoice.Id,
+                            ProductId = item.ProductId,
+                            Quantity = item.Quantity,
+                            Price = item.Product.Price
+                        };
+
+                        invoice.InvoiceDetails.Add(invoiceDetail);
+                        _context.InvoiceDetails.Add(invoiceDetail);
+
+                        product.Instock -= item.Quantity;
+                        _context.Products.Update(product);
+                    }
+
+                    await _context.SaveChangesAsync();
+
+                    // Xóa giỏ hàng sau khi thanh toán thành công
+                    _context.ShoppingCarts.Remove(shoppingCart);
+                    await _context.SaveChangesAsync();
+
+                    transaction.Commit();
+                    return RedirectToAction("InvoiceDetails", new { id = invoice.Id });
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    ModelState.AddModelError("", "Có lỗi xảy ra trong quá trình thanh toán.");
+                    // Ghi log lỗi (tùy chọn)
+                    Console.WriteLine($"Lỗi thanh toán: {ex.Message}");
+                    return View(model);
+                }
             }
-
-            await _context.SaveChangesAsync();
-
-            // Xóa giỏ hàng sau khi thanh toán thành công
-            _context.ShoppingCarts.Remove(shoppingCart);
-            await _context.SaveChangesAsync();
-
-            Console.WriteLine("✅ Hóa đơn đã được tạo thành công!");
-
-            return RedirectToAction("InvoiceDetails", new { id = invoice.Id });
         }
 
         public async Task<IActionResult> InvoiceDetails(int id)

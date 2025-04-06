@@ -55,7 +55,17 @@
                             <p class="card-text">
                                 <strong>💰 Price:</strong> <span class="text-danger">@string.Format("{0:0.00} VNĐ", product.Price)</span>
                             </p>
-                            <p class="card-text"><strong>In Stock:</strong> @product.Instock</p>
+                            <p class="card-text">
+                                <strong>In Stock:</strong>
+                                @if (product.Instock == 0)
+                                {
+                                    <span class="text-danger">Đã hết hàng</span>
+                                }
+                                else
+                                {
+                                    @product.Instock
+                                }
+                            </p>
                         </div>
                     </div>
                 </a>
@@ -90,11 +100,24 @@
                                 <p class="card-text">
                                     <strong>💰 Price:</strong> <span class="text-danger">@string.Format("{0:0.00} VNĐ", product.Price)</span>
                                 </p>
-                                <p class="card-text"><strong>In Stock:</strong>@product.Instock</p>
-                                <a asp-controller="ShoppingCart" asp-action="AddToCart"
-                                   asp-route-productId="@product.Id" asp-route-quantity="@numOfQuantity">
-                                    <i class="fas fa-shopping-cart"></i> Add to Cart
-                                </a>
+                                <p class="card-text">
+                                    <strong>In Stock:</strong>
+                                    @if (product.Instock == 0)
+                                    {
+                                        <span class="text-danger">Đã hết hàng</span>
+                                    }
+                                    else
+                                    {
+                                        @product.Instock
+                                    }
+                                </p>
+                                @if (product.Instock > 0)
+                                {
+                                    <a asp-controller="ShoppingCart" asp-action="AddToCart"
+                                       asp-route-productId="@product.Id" asp-route-quantity="@numOfQuantity">
+                                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                                    </a>
+                                }
                             </div>
                         </div>
                     </a>

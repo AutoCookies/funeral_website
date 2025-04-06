@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H30JTWh/Jo+Zh3Um00ZSzPT1C90RT5AOrfzKn3iE7Bs=",
+  "Hash": "1JjItTXJOB0VbhChrAEt6gv/bghXz6pXgvjImyPLiw0=",
   "Source": "DietDoHongTran",
   "BasePath": "_content/DietDoHongTran",
   "Mode": "Default",
@@ -1571,6 +1571,27 @@
       "OriginalItemSpec": "wwwroot\\images\\1f3b043e-50ae-4214-aa0c-989c927575e8_quantai.jpg"
     },
     {
+      "Identity": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\30b2591e-7af6-46b7-876c-93eff304229a_quantai.jpg",
+      "SourceId": "DietDoHongTran",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\",
+      "BasePath": "_content/DietDoHongTran",
+      "RelativePath": "images/30b2591e-7af6-46b7-876c-93eff304229a_quantai#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yur20n56yv",
+      "Integrity": "dno6swIgZJfYhWu/eowmo8R341vdpzMo9FlC+cNSgxw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\30b2591e-7af6-46b7-876c-93eff304229a_quantai.jpg"
+    },
+    {
       "Identity": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\47c230d4-9bc6-49da-962f-f0ca1c675efb_qtkl1.jpg",
       "SourceId": "DietDoHongTran",
       "SourceType": "Discovered",
@@ -1884,6 +1905,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\af899f2c-8e58-4c4b-8687-e0e770ccda7c_quan-tai-go-trai-phat-giao-4.jpg"
+    },
+    {
+      "Identity": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\c3f80f62-b90e-42eb-9f7c-45c2d1ef9b81_1726306559556.png",
+      "SourceId": "DietDoHongTran",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\",
+      "BasePath": "_content/DietDoHongTran",
+      "RelativePath": "images/c3f80f62-b90e-42eb-9f7c-45c2d1ef9b81_1726306559556#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7wp62rmlow",
+      "Integrity": "aQmKxC0SPme515eqIskQ2UWHmtSrug2RpWU/mD19Thw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\c3f80f62-b90e-42eb-9f7c-45c2d1ef9b81_1726306559556.png"
     },
     {
       "Identity": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\d1e4d5a3-2f92-4b8a-a5d4-d31c8d82532a_cac-loai-quan-tai-3-1024x576.jpg",
@@ -6705,6 +6747,88 @@
       ]
     },
     {
+      "Route": "images/30b2591e-7af6-46b7-876c-93eff304229a_quantai.jpg",
+      "AssetFile": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\30b2591e-7af6-46b7-876c-93eff304229a_quantai.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47636"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dno6swIgZJfYhWu/eowmo8R341vdpzMo9FlC+cNSgxw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 02:18:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dno6swIgZJfYhWu/eowmo8R341vdpzMo9FlC+cNSgxw="
+        }
+      ]
+    },
+    {
+      "Route": "images/30b2591e-7af6-46b7-876c-93eff304229a_quantai.yur20n56yv.jpg",
+      "AssetFile": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\30b2591e-7af6-46b7-876c-93eff304229a_quantai.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47636"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dno6swIgZJfYhWu/eowmo8R341vdpzMo9FlC+cNSgxw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 02:18:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yur20n56yv"
+        },
+        {
+          "Name": "label",
+          "Value": "images/30b2591e-7af6-46b7-876c-93eff304229a_quantai.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dno6swIgZJfYhWu/eowmo8R341vdpzMo9FlC+cNSgxw="
+        }
+      ]
+    },
+    {
       "Route": "images/47c230d4-9bc6-49da-962f-f0ca1c675efb_qtkl1.3gmrbmmggh.jpg",
       "AssetFile": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\47c230d4-9bc6-49da-962f-f0ca1c675efb_qtkl1.jpg",
       "Selectors": [],
@@ -7931,6 +8055,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-zyI8wN0/taDFKH1cKjkA2cSnnQA+KTWr8gNQTmHpuxg="
+        }
+      ]
+    },
+    {
+      "Route": "images/c3f80f62-b90e-42eb-9f7c-45c2d1ef9b81_1726306559556.7wp62rmlow.png",
+      "AssetFile": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\c3f80f62-b90e-42eb-9f7c-45c2d1ef9b81_1726306559556.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "97857"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aQmKxC0SPme515eqIskQ2UWHmtSrug2RpWU/mD19Thw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 02:23:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7wp62rmlow"
+        },
+        {
+          "Name": "label",
+          "Value": "images/c3f80f62-b90e-42eb-9f7c-45c2d1ef9b81_1726306559556.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aQmKxC0SPme515eqIskQ2UWHmtSrug2RpWU/mD19Thw="
+        }
+      ]
+    },
+    {
+      "Route": "images/c3f80f62-b90e-42eb-9f7c-45c2d1ef9b81_1726306559556.png",
+      "AssetFile": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\wwwroot\\images\\c3f80f62-b90e-42eb-9f7c-45c2d1ef9b81_1726306559556.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "97857"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aQmKxC0SPme515eqIskQ2UWHmtSrug2RpWU/mD19Thw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 02:23:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aQmKxC0SPme515eqIskQ2UWHmtSrug2RpWU/mD19Thw="
         }
       ]
     },

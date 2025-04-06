@@ -234,6 +234,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1f3b043e-50ae-4214-aa0c-989c927575e8_quantai.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\30b2591e-7af6-46b7-876c-93eff304229a_quantai.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DietDoHongTran</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DietDoHongTran</BasePath>
+      <RelativePath>images/30b2591e-7af6-46b7-876c-93eff304229a_quantai.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>yur20n56yv</Fingerprint>
+      <Integrity>dno6swIgZJfYhWu/eowmo8R341vdpzMo9FlC+cNSgxw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\30b2591e-7af6-46b7-876c-93eff304229a_quantai.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\47c230d4-9bc6-49da-962f-f0ca1c675efb_qtkl1.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DietDoHongTran</SourceId>
@@ -503,6 +521,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\af899f2c-8e58-4c4b-8687-e0e770ccda7c_quan-tai-go-trai-phat-giao-4.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c3f80f62-b90e-42eb-9f7c-45c2d1ef9b81_1726306559556.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DietDoHongTran</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DietDoHongTran</BasePath>
+      <RelativePath>images/c3f80f62-b90e-42eb-9f7c-45c2d1ef9b81_1726306559556.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>7wp62rmlow</Fingerprint>
+      <Integrity>aQmKxC0SPme515eqIskQ2UWHmtSrug2RpWU/mD19Thw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c3f80f62-b90e-42eb-9f7c-45c2d1ef9b81_1726306559556.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d1e4d5a3-2f92-4b8a-a5d4-d31c8d82532a_cac-loai-quan-tai-3-1024x576.jpg'))">
       <SourceType>Package</SourceType>
