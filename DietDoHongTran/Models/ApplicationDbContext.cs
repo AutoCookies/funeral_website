@@ -24,6 +24,12 @@ namespace DietDoHongTran.Models
         {
             base.OnModelCreating(modelBuilder);
 
+            modelBuilder.Entity<Category>()
+                .HasMany(c => c.Products)
+                .WithOne(p => p.Category)
+                .HasForeignKey(p => p.CategoryId)
+                .OnDelete(DeleteBehavior.Cascade);
+
             // Định nghĩa quan hệ nhiều-nhiều thông qua bảng trung gian ServiceProduct
             modelBuilder.Entity<ServiceProduct>()
                 .HasKey(sp => new { sp.ServiceId, sp.ProductId }); // Định nghĩa khóa chính

@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "E:\\Github Projects\\funeral_website\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\funeral_website\\dietdohongtran\\areas\\admin\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\areas\\admin\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\funeral_website\\dietdohongtran\\repository\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\repository\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\funeral_website\\dietdohongtran\\viewmodels\\manageuserrolesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\viewmodels\\manageuserrolesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\funeral_website\\dietdohongtran\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\funeral_website\\dietdohongtran\\areas\\admin\\views\\usermanagement\\manageroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\areas\\admin\\views\\usermanagement\\manageroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\funeral_website\\dietdohongtran\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\funeral_website\\dietdohongtran\\areas\\admin\\views\\usermanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\areas\\admin\\views\\usermanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\funeral_website\\dietdohongtran\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|e:\\github projects\\funeral_website\\dietdohongtran\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C87384-CD92-45DA-9249-BD75012EA95D}|DietDoHongTran\\DietDoHongTran.csproj|solutionrelative:dietdohongtran\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +30,71 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ManageUserRolesViewModel.cs",
-              "DocumentMoniker": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\ViewModels\\ManageUserRolesViewModel.cs",
-              "RelativeDocumentMoniker": "DietDoHongTran\\ViewModels\\ManageUserRolesViewModel.cs",
-              "ToolTip": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\ViewModels\\ManageUserRolesViewModel.cs",
-              "RelativeToolTip": "DietDoHongTran\\ViewModels\\ManageUserRolesViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "EFCategoryRepository.cs",
+              "DocumentMoniker": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Repository\\EFCategoryRepository.cs",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Repository\\EFCategoryRepository.cs",
+              "ToolTip": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Repository\\EFCategoryRepository.cs",
+              "RelativeToolTip": "DietDoHongTran\\Repository\\EFCategoryRepository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAIwC8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T17:12:45.922Z",
+              "WhenOpened": "2025-04-06T18:38:20.296Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ManageRoles.cshtml",
-              "DocumentMoniker": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Areas\\Admin\\Views\\UserManagement\\ManageRoles.cshtml",
-              "RelativeDocumentMoniker": "DietDoHongTran\\Areas\\Admin\\Views\\UserManagement\\ManageRoles.cshtml",
-              "ToolTip": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Areas\\Admin\\Views\\UserManagement\\ManageRoles.cshtml",
-              "RelativeToolTip": "DietDoHongTran\\Areas\\Admin\\Views\\UserManagement\\ManageRoles.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T16:36:21.149Z",
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "DietDoHongTran\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAYwC0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T18:36:50.356Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Areas\\Admin\\Views\\UserManagement\\Index.cshtml",
-              "RelativeDocumentMoniker": "DietDoHongTran\\Areas\\Admin\\Views\\UserManagement\\Index.cshtml",
-              "ToolTip": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Areas\\Admin\\Views\\UserManagement\\Index.cshtml",
-              "RelativeToolTip": "DietDoHongTran\\Areas\\Admin\\Views\\UserManagement\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T16:33:40.409Z",
+              "Title": "Category.cs",
+              "DocumentMoniker": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Models\\Category.cs",
+              "ToolTip": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Models\\Category.cs",
+              "RelativeToolTip": "DietDoHongTran\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T18:35:56.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserManagementController.cs",
-              "DocumentMoniker": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Areas\\Admin\\Controllers\\UserManagementController.cs",
-              "RelativeDocumentMoniker": "DietDoHongTran\\Areas\\Admin\\Controllers\\UserManagementController.cs",
-              "ToolTip": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Areas\\Admin\\Controllers\\UserManagementController.cs",
-              "RelativeToolTip": "DietDoHongTran\\Areas\\Admin\\Controllers\\UserManagementController.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAowHcAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Product.cs",
+              "DocumentMoniker": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Models\\Product.cs",
+              "ToolTip": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Models\\Product.cs",
+              "RelativeToolTip": "DietDoHongTran\\Models\\Product.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAYwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T16:27:06.693Z",
+              "WhenOpened": "2025-04-06T18:35:35.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "DietDoHongTran\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "ToolTip": "E:\\Github Projects\\funeral_website\\DietDoHongTran\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "DietDoHongTran\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T18:34:44.043Z",
               "EditorCaption": ""
             }
           ]

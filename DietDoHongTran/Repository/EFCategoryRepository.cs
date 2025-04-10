@@ -35,9 +35,25 @@ namespace DietDoHongTran.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync (int id)
+        public async Task DeleteAsync(int id)
         {
             var category = await _context.Categories.FindAsync(id);
+            if (category == null)
+            {
+                return; // Hoặc bạn có thể throw NotFoundException nếu muốn
+            }
+
+            // Cập nhật các sản phẩm liên quan và gán CategoryId thành null
+            var products = await _context.Products.Where(p => p.CategoryId == id).ToListAsync();
+            foreach (var product in products)
+            {
+                product.CategoryId = null;
+                _context.Products.Update(product);  // Cập nhật lại các sản phẩm
+            }
+
+            await _context.SaveChangesAsync();  // Lưu thay đổi của các sản phẩm
+
+            // Xóa Category
             _context.Categories.Remove(category);
             await _context.SaveChangesAsync();
         }
